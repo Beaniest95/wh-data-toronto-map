@@ -28,7 +28,7 @@ class GoogleMapVariables:
     @classmethod
     def get(cls) -> "GoogleMapVariables":
         return cls(
-            api_key='add key here'
+            api_key='add key here',
             file_path = "./results/json",
             raw_path_suffix = "google/raw",
             enriched_path_suffix = "google/enriched",
