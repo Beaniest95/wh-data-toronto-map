@@ -1,6 +1,3 @@
-# %%
-# TODO: fix url link xpath
-# %%
 import time
 import json
 from loguru import logger
@@ -40,7 +37,7 @@ class GoogleMapCrawler(WebCrawler):
     def search_string(self):
         return self._input_string.replace(" ", "+")
 
-    def _search(self):
+    def search(self):
         searchbox_selector = server_variables.google.searchbox_selector
         searchbutton_selector = server_variables.google.searchbutton_selector
         logger.info(f'searchbox selector: {searchbox_selector}')
@@ -60,9 +57,9 @@ class GoogleMapCrawler(WebCrawler):
         searchbutton.click()
         time.sleep(10)
 
-        self._scroll_down()
+        self.scroll_down()
 
-    def _scroll_down(self):
+    def scroll_down(self):
         scroll_count = 0
         while True:
             scroll_path = self.driver.find_element(By.XPATH, server_variables.google.scroll_xpath)
@@ -100,21 +97,21 @@ class GoogleMapCrawler(WebCrawler):
             return "skip"
 
 
-    def _crawl(self):
+    def crawl(self):
         for i in range(3, 999):
             index = str(i)
             line_type = self._get_line_type(server_variables.google.valid_result_xpath.format(index=index))
             url, name, grade, address = None, None, None, None
             if line_type == "valid":
                 try:
-                    name    = self._get_element_by_xpath(server_variables.google.name_xpath.format(index=index)).text
-                    address = self._get_element_by_xpath(server_variables.google.address_xpath.format(index=index)).text
-                    url     = self._get_element_by_xpath(server_variables.google.url_link_xpath.format(index=index)).get_attribute("href")
-                    grade   = self._get_element_by_xpath(server_variables.google.grade_xpath.format(index=index)).text
-                    self.result_dataset.append(self._format(url, name, grade, address))
+                    name    = self.get_parsed_info(self._get_element_by_xpath(server_variables.google.name_xpath.format(index=index)), 'text')
+                    address = self.get_parsed_info(self._get_element_by_xpath(server_variables.google.address_xpath.format(index=index)), 'text')
+                    url     = self.get_parsed_info(self._get_element_by_xpath(server_variables.google.url_link_xpath.format(index=index)), 'href')
+                    grade   = self.get_parsed_info(self._get_element_by_xpath(server_variables.google.grade_xpath.format(index=index)), 'text')
+                    self.result_dataset.append(self.format(url, name, grade, address))
                 except Exception as e:
                     logger.info(f"Error has been occurred: {str(e)}")
-                    self.result_dataset.append(self._format(url, name, grade, address))
+                    self.result_dataset.append(self.format(url, name, grade, address))
             elif line_type == "skip":
                 continue
             elif line_type == "end":
@@ -123,10 +120,12 @@ class GoogleMapCrawler(WebCrawler):
             else:
                 logger.info(f'Error has been occurred: line type is {line_type}')
                 logger.info(f"Error has been occurred: line number is {str(i)}")
+                time.sleep(60)
                 break
+
         return self.result_dataset
 
-    def _format(self, url, name, grade, address):
+    def format(self, url, name, grade, address):
         return dict(
             url = url,
             name = name,
@@ -139,10 +138,8 @@ class GoogleMapCrawler(WebCrawler):
             json_file = json.dumps(self.result_dataset, indent=4)
             f.write(json_file)
 
-    def _quit(self):
-        self.driver.quit()
     def run(self):
-        self._search()
-        self._crawl()
+        self.search()
+        self.crawl()
         self.to_json()
-        self._quit()
+        self.quit()

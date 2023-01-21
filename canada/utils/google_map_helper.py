@@ -19,22 +19,20 @@ def enrich_data(gm_client, data) -> List[Dict[str, Any]]:
         enriched_row = row
         lat, lng = None, None
         geocode_info = None
-        if 'address' in row:
+        # if row.get('address') != None:
+        #     try:
+        #         geocode_info = gm_client.geocode('Toronto ' + row['address'])
+        #         lat = geocode_info[0]['geometry']['location']['lat']
+        #         lng = geocode_info[0]['geometry']['location']['lng']
+        #     except Exception as e:
+        #         logger.info(str(e))
+        #         logger.info(row['address'])
+        #         logger.info(f"geocode info: {geocode_info}")
 
-            try:
-                geocode_info = gm_client.geocode('Toronto ' + row['address'])
-                lat = geocode_info[0]['geometry']['location']['lat']
-                lng = geocode_info[0]['geometry']['location']['lng']
-                enriched_row['lat'] = lat
-                enriched_row['lng'] = lng
-            except Exception as e:
-                logger.info(str(e))
-                logger.info(row['address'])
-                logger.info(f"geocode info: {geocode_info}")
-        else:
-            enriched_row['lat'] = lat
-            enriched_row['lng'] = lng
-        result.append(enriched_row)
+        # enriched_row['lat'] = lat
+        # enriched_row['lng'] = lng
+        # result.append(enriched_row)
+
     return result
 
 def google_map_data_processor(api_key, file_path,raw_path_suffix, enriched_path_suffix, file_format):

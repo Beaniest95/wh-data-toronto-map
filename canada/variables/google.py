@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from typing import Any, Dict, Iterable, List, Optional
+from crawler.secret import GOOGLE_MAP_API_KEY
 
 @dataclass
 class GoogleMapVariables:
@@ -28,11 +29,11 @@ class GoogleMapVariables:
     @classmethod
     def get(cls) -> "GoogleMapVariables":
         return cls(
-            api_key = "key here",
-            file_path = "./results/json",
-            raw_path_suffix = "google/raw",
-            enriched_path_suffix = "google/enriched",
-            file_format = "json",
+            api_key=GOOGLE_MAP_API_KEY,
+            file_path="./results/json",
+            raw_path_suffix="google/raw",
+            enriched_path_suffix="google/enriched",
+            file_format="json",
 
             url="https://www.google.com/maps?hl=en",
             searchbox_selector="#searchboxinput",
@@ -47,39 +48,32 @@ class GoogleMapVariables:
 
             valid_result_class_list=[
                 'Nv2PK THOPZb CpccDe',
-                'Nv2PK tH5CWc THOPZb'
+                'Nv2PK tH5CWc THOPZb',
+                'Nv2PK Q2HXcd THOPZb',
             ],
             end_line_result_class_list=[
                 'lXJj5c Hk4XGb',
-                'PbZDve'
+                'PbZDve',
+                ''
             ],
             skip_line_result_class_list=[
                 'fp2VUc',
                 'z7i0C m6QErb',
-                'm6QErb tLjsW'
+                'm6QErb tLjsW',
             ],
 
             search_string=[
-                # 'toronto hospital',
+                'toronto hospital',
 
-                # 'toronto bank',
+                'toronto bank',
 
-                # 'toronto fitness center',
+                'toronto fitness center',
 
-                # 'toronto church',
-
-                # 'toronto metro',
-                # 'toronto walmart',
-                # 'toronto freshco',
-                # 'toronto costco',
-
+                'toronto church',
                 'canada toronto coin laundry',
-                'canada toronto costco'
-                'canada toronto freshco'
+
+                'canada toronto walmart',
+                'canada toronto costco',
+                'canada toronto freshco',
             ]
         )
-
-
-
-            # else:
-                # raise ValueError("ENVIRONMENT environment variable should be in ('production', 'staging')")
