@@ -47,25 +47,3 @@ def google_map_data_processor(api_key, file_path,raw_path_suffix, enriched_path_
             data = json.load(file)
             enriched_data = enrich_data(gm_client, data)
             to_json(file_path, enriched_path_suffix, file_name, file_format, enriched_data)
-
-# # %%
-# import glob
-# # %%
-# import json
-# # %%
-# for fp in glob.glob("../results/json/google/raw/*.json"):
-#     a = fp.split('google/raw/')[-1].split(f'.json')[0]
-#     with open(fp,'r') as file:
-#         b = json.load(file)
-# # %%
-# len(b)
-# # %%
-# %%
-import googlemaps
-gm_client=googlemaps.Client(key="AIzaSyBr6Sz3AaNGWZpgL_faYsZBboH63E-DLE0")
-geocode_info = gm_client.geocode("Toronto 27R Atlantic Ave")
-
-
-# %%
-geocode_info
-# %%
