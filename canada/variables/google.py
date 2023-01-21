@@ -75,27 +75,27 @@ class GoogleMapVariables:
                 'm6QErb tLjsW',
             ],
             search_string=[
-                # 'canada toronto bank',
-                # 'canada toronto hospital',
+                'canada toronto bank',
+                'canada toronto hospital',
 
-                # 'canada toronto church',
+                'canada toronto church',
 
-                # 'canada toronto coin laundry',
-                # 'canada toronto fitness center',
-                # 'canada toronto theatre',
+                'canada toronto coin laundry',
+                'canada toronto fitness center',
+                'canada toronto theatre',
 
-                # 'canada toronto costco',
-                # 'canada toronto walmart',
-                # 'canada toronto freshco',
-                # 'canada toronto best buy',
-                # 'canada toronto grocery',
-                # 'canada toronto shopping mall',
+                'canada toronto costco',
+                'canada toronto walmart',
+                'canada toronto freshco',
+                'canada toronto best buy',
+                'canada toronto grocery',
+                'canada toronto shopping mall',
 
-                # 'canada toronto restaurant',
-                # 'canada toronto pizza',
+                'canada toronto restaurant',
+                'canada toronto pizza',
                 'canada toronto chipotle',
                 'canada toronto bbq chicken',
-                # 'canada toronto food',
+                'canada toronto food',
             ],
 
             #####################
