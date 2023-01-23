@@ -37,7 +37,7 @@ class GoogleMapDrawer():
                 feature_group.add_child(
                     folium.Marker(
                         (row['lat'], row['lng']),
-                        popup=f"<a href={row['url']}>{row['name']} ({row.get('grade', '')})</a>",
+                        popup=f"<a href={row['url']} target='_blank'>{row['name']} ({row.get('grade', '')}) </a>",
                         tooltip=row['address'],
                         icon=icon
                     )
@@ -45,7 +45,7 @@ class GoogleMapDrawer():
 
     def _extract_and_draw(self, data):
         for icon_name, color in data.items():
-            feature_group = folium.FeatureGroup(name=f'{icon_name} ({color.get})').add_to(self.map_object)
+            feature_group = folium.FeatureGroup(name=f'{icon_name} ({color})').add_to(self.map_object)
             with open(f"{self.file_path}/{self.enriched_path_suffix}/canada_toronto_{icon_name}.{self.file_format}") as file:
                 icon_data = json.load(file)
                 self._add_icons(feature_group, icon_name, color, icon_data)
