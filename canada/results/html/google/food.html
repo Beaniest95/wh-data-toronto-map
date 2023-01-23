@@ -1,0 +1,3671 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c05ea6184810cc9f8373fa76e7bf3171 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c05ea6184810cc9f8373fa76e7bf3171" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c05ea6184810cc9f8373fa76e7bf3171 = L.map(
+                "map_c05ea6184810cc9f8373fa76e7bf3171",
+                {
+                    center: [43.6799585, -79.395395],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1eec6755b5e76a05a379553cebd2cd74 = L.tileLayer(
+                "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c05ea6184810cc9f8373fa76e7bf3171);
+        
+    
+            var poly_line_bda8740b3c8d42934774a903ff5fa888 = L.polyline(
+                [[43.749391, -79.638496], [43.855409, -79.170128], [43.813431, -79.151355], [43.793108, -79.117096], [43.619748, -79.321244], [43.583384, -79.542757], [43.626882, -79.564345], [43.646242, -79.60846], [43.665257, -79.587341], [43.749391, -79.638496]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_c05ea6184810cc9f8373fa76e7bf3171);
+        
+    
+            var feature_group_9cbf59877f99171c8c5f065f7da90c19 = L.featureGroup(
+                {}
+            ).addTo(map_c05ea6184810cc9f8373fa76e7bf3171);
+        
+    
+            var marker_c9dd5b597a164ccd00f251d62fb9805b = L.marker(
+                [43.6542134, -79.4631569],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_55bcc9b9d0b77aa33b7c6fc36a14720c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c9dd5b597a164ccd00f251d62fb9805b.setIcon(icon_55bcc9b9d0b77aa33b7c6fc36a14720c);
+        
+    
+        var popup_d21fa783e9191e6f29a58bf51da92703 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66918ab48c40c4cf92efadd0bb610075 = $(`<div id="html_66918ab48c40c4cf92efadd0bb610075" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Vivo+Pizza+%2B+Pasta/data=!4m7!3m6!1s0x882b352552dd6aa5:0xd8d0eccdcde9061a!8m2!3d43.6542134!4d-79.4631569!16s%2Fg%2F11fjbv114d!19sChIJpWrdUiU1K4gRGgbpzc3s0Ng?authuser=0&hl=en&rclk=1>Vivo Pizza + Pasta (4.0)</a></div>`)[0];
+                popup_d21fa783e9191e6f29a58bf51da92703.setContent(html_66918ab48c40c4cf92efadd0bb610075);
+            
+        
+
+        marker_c9dd5b597a164ccd00f251d62fb9805b.bindPopup(popup_d21fa783e9191e6f29a58bf51da92703)
+        ;
+
+        
+    
+    
+            marker_c9dd5b597a164ccd00f251d62fb9805b.bindTooltip(
+                `<div>
+                     1832 Bloor St W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_29cfd4e92ac80f23abf76598eabf746e = L.marker(
+                [43.6458594, -79.4100822],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_34ed32c50fb7bcf5d1739c156dc7a099 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_29cfd4e92ac80f23abf76598eabf746e.setIcon(icon_34ed32c50fb7bcf5d1739c156dc7a099);
+        
+    
+        var popup_d38ca04be10b79eabf8d2e6b36306e3a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16a107a7ed60b22795d7bf47bb32c1bd = $(`<div id="html_16a107a7ed60b22795d7bf47bb32c1bd" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Loaded+Pierogi/data=!4m7!3m6!1s0x882b34e395758eb1:0xea78d51e357ad856!8m2!3d43.6458594!4d-79.4100822!16s%2Fg%2F11c5s6btch!19sChIJsY51leM0K4gRVth6NR7VeOo?authuser=0&hl=en&rclk=1>Loaded Pierogi (4.4)</a></div>`)[0];
+                popup_d38ca04be10b79eabf8d2e6b36306e3a.setContent(html_16a107a7ed60b22795d7bf47bb32c1bd);
+            
+        
+
+        marker_29cfd4e92ac80f23abf76598eabf746e.bindPopup(popup_d38ca04be10b79eabf8d2e6b36306e3a)
+        ;
+
+        
+    
+    
+            marker_29cfd4e92ac80f23abf76598eabf746e.bindTooltip(
+                `<div>
+                     839 Queen St W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6684fd27b83b372f272e798c38990970 = L.marker(
+                [43.6569658, -79.3804789],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_88b1bd9f81b5214c53f5b311aa8dab19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6684fd27b83b372f272e798c38990970.setIcon(icon_88b1bd9f81b5214c53f5b311aa8dab19);
+        
+    
+        var popup_4e6bf3a12ae6f1347cdf9aa9cd7d9f8e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb52ac6a93ff5f4ed51eb587111040cc = $(`<div id="html_cb52ac6a93ff5f4ed51eb587111040cc" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Blaze+Pizza/data=!4m7!3m6!1s0x882b34cacd7aecf1:0x436e602b2564293a!8m2!3d43.6569658!4d-79.3804789!16s%2Fg%2F11bw82dkw2!19sChIJ8ex6zco0K4gROilkJStgbkM?authuser=0&hl=en&rclk=1>Blaze Pizza (4.5)</a></div>`)[0];
+                popup_4e6bf3a12ae6f1347cdf9aa9cd7d9f8e.setContent(html_cb52ac6a93ff5f4ed51eb587111040cc);
+            
+        
+
+        marker_6684fd27b83b372f272e798c38990970.bindPopup(popup_4e6bf3a12ae6f1347cdf9aa9cd7d9f8e)
+        ;
+
+        
+    
+    
+            marker_6684fd27b83b372f272e798c38990970.bindTooltip(
+                `<div>
+                     10 Dundas St E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d7db8ae2b33519d8912c7c47b0f9d57 = L.marker(
+                [43.6768558, -79.4493318],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_cf8114b29661cfcf32147344f24167d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6d7db8ae2b33519d8912c7c47b0f9d57.setIcon(icon_cf8114b29661cfcf32147344f24167d9);
+        
+    
+        var popup_da2c96f304be03a97564af6614ab3d10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00814c4d0cfd13db67dc9676149862e5 = $(`<div id="html_00814c4d0cfd13db67dc9676149862e5" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Frank%E2%80%99s+Pizza+House+%E2%80%94+Toronto+Pizza+Delivery/data=!4m7!3m6!1s0x882b340d21d6d7f7:0xa3bdf9ecd2bf8c00!8m2!3d43.6768558!4d-79.4493318!16s%2Fg%2F1tj2255d!19sChIJ99fWIQ00K4gRAIy_0uz5vaM?authuser=0&hl=en&rclk=1>Frank’s Pizza House — Toronto Pizza Delivery (4.5)</a></div>`)[0];
+                popup_da2c96f304be03a97564af6614ab3d10.setContent(html_00814c4d0cfd13db67dc9676149862e5);
+            
+        
+
+        marker_6d7db8ae2b33519d8912c7c47b0f9d57.bindPopup(popup_da2c96f304be03a97564af6614ab3d10)
+        ;
+
+        
+    
+    
+            marker_6d7db8ae2b33519d8912c7c47b0f9d57.bindTooltip(
+                `<div>
+                     1352 St Clair Ave W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fb96ab94b9bb6a5e156576c07285b1d5 = L.marker(
+                [43.6803138, -79.338836],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_2d6dff7716beb4a927c18df1fc96236f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_fb96ab94b9bb6a5e156576c07285b1d5.setIcon(icon_2d6dff7716beb4a927c18df1fc96236f);
+        
+    
+        var popup_cd51bded51d12961d7c5780be441805f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d9768d0dc1e8188ea14bb6300221dd1 = $(`<div id="html_0d9768d0dc1e8188ea14bb6300221dd1" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Danforth+Pizza+House/data=!4m7!3m6!1s0x89d4cca010a34c87:0xe804b98a588424a3!8m2!3d43.6803138!4d-79.338836!16s%2Fg%2F11b6dpy85s!19sChIJh0yjEKDM1IkRoySEWIq5BOg?authuser=0&hl=en&rclk=1>Danforth Pizza House (4.6)</a></div>`)[0];
+                popup_cd51bded51d12961d7c5780be441805f.setContent(html_0d9768d0dc1e8188ea14bb6300221dd1);
+            
+        
+
+        marker_fb96ab94b9bb6a5e156576c07285b1d5.bindPopup(popup_cd51bded51d12961d7c5780be441805f)
+        ;
+
+        
+    
+    
+            marker_fb96ab94b9bb6a5e156576c07285b1d5.bindTooltip(
+                `<div>
+                     920 Danforth Ave
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d4c2ae94a0a820a6ca7d0b86f8ddc0bf = L.marker(
+                [43.6453282, -79.3897511],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_d3a6e9f76a2c3d21d9f00c3fd9242a67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d4c2ae94a0a820a6ca7d0b86f8ddc0bf.setIcon(icon_d3a6e9f76a2c3d21d9f00c3fd9242a67);
+        
+    
+        var popup_72e3faa89db526adaef914a99dd398f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d79a64a23de35d52984e37a75522079 = $(`<div id="html_4d79a64a23de35d52984e37a75522079" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Jz%E2%80%99s+Pizza/data=!4m7!3m6!1s0x882b34d0cc418a13:0x44748d4a2f3cc9fc!8m2!3d43.6453282!4d-79.3897511!16s%2Fg%2F11b8_tx99x!19sChIJE4pBzNA0K4gR_Mk8L0qNdEQ?authuser=0&hl=en&rclk=1>Jz’s Pizza (4.6)</a></div>`)[0];
+                popup_72e3faa89db526adaef914a99dd398f8.setContent(html_4d79a64a23de35d52984e37a75522079);
+            
+        
+
+        marker_d4c2ae94a0a820a6ca7d0b86f8ddc0bf.bindPopup(popup_72e3faa89db526adaef914a99dd398f8)
+        ;
+
+        
+    
+    
+            marker_d4c2ae94a0a820a6ca7d0b86f8ddc0bf.bindTooltip(
+                `<div>
+                     232 Wellington St W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65b74adb4418d7f25ced162805a127e1 = L.marker(
+                [43.6779908, -79.443871],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_37485205ae7879ff81373170040dfd0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_65b74adb4418d7f25ced162805a127e1.setIcon(icon_37485205ae7879ff81373170040dfd0e);
+        
+    
+        var popup_43ecf9871fb784985e8e989442b8c9a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7789416f32a48afb31e634aa5d6deb88 = $(`<div id="html_7789416f32a48afb31e634aa5d6deb88" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Pizza+e+Pazzi/data=!4m7!3m6!1s0x882b3473931a5cf7:0x9d09f030d4b34401!8m2!3d43.6779908!4d-79.443871!16s%2Fg%2F1hc2820n9!19sChIJ91wak3M0K4gRAUSz1DDwCZ0?authuser=0&hl=en&rclk=1>Pizza e Pazzi (4.5)</a></div>`)[0];
+                popup_43ecf9871fb784985e8e989442b8c9a9.setContent(html_7789416f32a48afb31e634aa5d6deb88);
+            
+        
+
+        marker_65b74adb4418d7f25ced162805a127e1.bindPopup(popup_43ecf9871fb784985e8e989442b8c9a9)
+        ;
+
+        
+    
+    
+            marker_65b74adb4418d7f25ced162805a127e1.bindTooltip(
+                `<div>
+                     1182 St Clair Ave W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_327d3496ef3cec0270191b0edce63764 = L.marker(
+                [43.6629183, -79.3323893],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_816ed3ea32568180614102028ba41ce4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_327d3496ef3cec0270191b0edce63764.setIcon(icon_816ed3ea32568180614102028ba41ce4);
+        
+    
+        var popup_5d025e199326653dba8908520ce476de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa1a9dddfcaa5521aa9789a1fe6d0156 = $(`<div id="html_fa1a9dddfcaa5521aa9789a1fe6d0156" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Descendant+Detroit+Style+Pizza/data=!4m7!3m6!1s0x882b35aaa7a3003f:0x72c64135baaf69a4!8m2!3d43.6629183!4d-79.3323893!16s%2Fg%2F11b8t6x_3w!19sChIJPwCjp6o1K4gRpGmvujVBxnI?authuser=0&hl=en&rclk=1>Descendant Detroit Style Pizza (4.7)</a></div>`)[0];
+                popup_5d025e199326653dba8908520ce476de.setContent(html_fa1a9dddfcaa5521aa9789a1fe6d0156);
+            
+        
+
+        marker_327d3496ef3cec0270191b0edce63764.bindPopup(popup_5d025e199326653dba8908520ce476de)
+        ;
+
+        
+    
+    
+            marker_327d3496ef3cec0270191b0edce63764.bindTooltip(
+                `<div>
+                     1168 Queen St E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_deb54a440122c9f560d087904085836c = L.marker(
+                [43.6484766, -79.3749958],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_8a309e7b6ea832075e580b4bd3711cc4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_deb54a440122c9f560d087904085836c.setIcon(icon_8a309e7b6ea832075e580b4bd3711cc4);
+        
+    
+        var popup_ba6cb026028852952c9c4fafd6faa42e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a03f76280610bc525b862b53f8509def = $(`<div id="html_a03f76280610bc525b862b53f8509def" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Uncle+Tony's/data=!4m7!3m6!1s0x89d4cb2dff2890e7:0x4029d38d010092f0!8m2!3d43.6484766!4d-79.3749958!16s%2Fg%2F11bwssj30v!19sChIJ55Ao_y3L1IkR8JIAAY3TKUA?authuser=0&hl=en&rclk=1>Uncle Tony's (3.8)</a></div>`)[0];
+                popup_ba6cb026028852952c9c4fafd6faa42e.setContent(html_a03f76280610bc525b862b53f8509def);
+            
+        
+
+        marker_deb54a440122c9f560d087904085836c.bindPopup(popup_ba6cb026028852952c9c4fafd6faa42e)
+        ;
+
+        
+    
+    
+            marker_deb54a440122c9f560d087904085836c.bindTooltip(
+                `<div>
+                     38 Wellington St E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_06adcdad524b1cf99e2da0971564f417 = L.marker(
+                [43.6487262, -79.4496716],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_232fdc7547b39adbbadbdac7781f7f64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_06adcdad524b1cf99e2da0971564f417.setIcon(icon_232fdc7547b39adbbadbdac7781f7f64);
+        
+    
+        var popup_6dd31ae46b964efbe754d738ddc4c3b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a5102b47c3325eaeacc19731b2fb0f1 = $(`<div id="html_7a5102b47c3325eaeacc19731b2fb0f1" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Pizzeria+Defina/data=!4m7!3m6!1s0x882b3435a5c91ae7:0x2f1823d3ba3f3669!8m2!3d43.6487262!4d-79.4496716!16s%2Fg%2F1tx_6_9_!19sChIJ5xrJpTU0K4gRaTY_utMjGC8?authuser=0&hl=en&rclk=1>Pizzeria Defina (4.6)</a></div>`)[0];
+                popup_6dd31ae46b964efbe754d738ddc4c3b7.setContent(html_7a5102b47c3325eaeacc19731b2fb0f1);
+            
+        
+
+        marker_06adcdad524b1cf99e2da0971564f417.bindPopup(popup_6dd31ae46b964efbe754d738ddc4c3b7)
+        ;
+
+        
+    
+    
+            marker_06adcdad524b1cf99e2da0971564f417.bindTooltip(
+                `<div>
+                     321 Roncesvalles Ave
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fcc1744a3bad47d05bb3dd16f83d0325 = L.marker(
+                [43.6011833, -79.5453528],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_c161a32ac2c8b2c694f7152b3ce4f42a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_fcc1744a3bad47d05bb3dd16f83d0325.setIcon(icon_c161a32ac2c8b2c694f7152b3ce4f42a);
+        
+    
+        var popup_33ca172485911b366a4788abb00fea47 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98c6f5b5d21212db64bf449ab1e2baea = $(`<div id="html_98c6f5b5d21212db64bf449ab1e2baea" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Il+Paesano+Pizzeria+%26+Restaurant/data=!4m7!3m6!1s0x882b4813bf1aa705:0x6de101d244681cff!8m2!3d43.6011833!4d-79.5453528!16s%2Fg%2F1vb9dpt8!19sChIJBacavxNIK4gR_xxoRNIB4W0?authuser=0&hl=en&rclk=1>Il Paesano Pizzeria & Restaurant (4.5)</a></div>`)[0];
+                popup_33ca172485911b366a4788abb00fea47.setContent(html_98c6f5b5d21212db64bf449ab1e2baea);
+            
+        
+
+        marker_fcc1744a3bad47d05bb3dd16f83d0325.bindPopup(popup_33ca172485911b366a4788abb00fea47)
+        ;
+
+        
+    
+    
+            marker_fcc1744a3bad47d05bb3dd16f83d0325.bindTooltip(
+                `<div>
+                     396 Brown's Line
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33836d0da76ef089ed1f7093f06d0aa3 = L.marker(
+                [43.6540471, -79.4020113],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_c1b1decc950fc51e05c71b0c54e85d5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_33836d0da76ef089ed1f7093f06d0aa3.setIcon(icon_c1b1decc950fc51e05c71b0c54e85d5d);
+        
+    
+        var popup_7591df708d07dd38347cbfd3f63a40a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd770d6e00533d1bfa0ab920f4d724c7 = $(`<div id="html_fd770d6e00533d1bfa0ab920f4d724c7" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Pizzeria+Via+Mercanti/data=!4m7!3m6!1s0x882b34c26f049a17:0xe0c4c501e5620278!8m2!3d43.6540471!4d-79.4020113!16s%2Fg%2F1hc2r1s5g!19sChIJF5oEb8I0K4gReAJi5QHFxOA?authuser=0&hl=en&rclk=1>Pizzeria Via Mercanti (4.5)</a></div>`)[0];
+                popup_7591df708d07dd38347cbfd3f63a40a7.setContent(html_fd770d6e00533d1bfa0ab920f4d724c7);
+            
+        
+
+        marker_33836d0da76ef089ed1f7093f06d0aa3.bindPopup(popup_7591df708d07dd38347cbfd3f63a40a7)
+        ;
+
+        
+    
+    
+            marker_33836d0da76ef089ed1f7093f06d0aa3.bindTooltip(
+                `<div>
+                     188 Augusta Ave
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f937e920249e8fa309fbf4ab58da47f = L.marker(
+                [43.6178032, -79.4874348],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_75810b55477e7deebc9f27036e2853a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9f937e920249e8fa309fbf4ab58da47f.setIcon(icon_75810b55477e7deebc9f27036e2853a5);
+        
+    
+        var popup_37a7c0969c888c0fea8b4766f0fbdd03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8789dab052141254ed20ec0822d5fb82 = $(`<div id="html_8789dab052141254ed20ec0822d5fb82" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Pizzeria+Oro+Di+Napoli/data=!4m7!3m6!1s0x882b361bdf372df1:0x7183712c11c0d905!8m2!3d43.6178032!4d-79.4874348!16s%2Fg%2F11bzv_s9bd!19sChIJ8S033xs2K4gRBdnAESxxg3E?authuser=0&hl=en&rclk=1>Pizzeria Oro Di Napoli (4.6)</a></div>`)[0];
+                popup_37a7c0969c888c0fea8b4766f0fbdd03.setContent(html_8789dab052141254ed20ec0822d5fb82);
+            
+        
+
+        marker_9f937e920249e8fa309fbf4ab58da47f.bindPopup(popup_37a7c0969c888c0fea8b4766f0fbdd03)
+        ;
+
+        
+    
+    
+            marker_9f937e920249e8fa309fbf4ab58da47f.bindTooltip(
+                `<div>
+                     2312 Lake Shore Blvd W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb001da7b4afd4ea0a37de2b15f3f7f8 = L.marker(
+                [43.6785472, -79.3476667],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_3a9b74f815eded37c79ea9e753530f63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_cb001da7b4afd4ea0a37de2b15f3f7f8.setIcon(icon_3a9b74f815eded37c79ea9e753530f63);
+        
+    
+        var popup_243014d9d64c5c5be62dd133794a6483 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8ce71a6cb7d98d6f836608fa5c10211 = $(`<div id="html_f8ce71a6cb7d98d6f836608fa5c10211" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Pizzeria+Libretto/data=!4m7!3m6!1s0x89d4cc9ca354ac49:0x6154bfff82619d85!8m2!3d43.6785472!4d-79.3476667!16s%2Fg%2F1thzpwsk!19sChIJSaxUo5zM1IkRhZ1hgv-_VGE?authuser=0&hl=en&rclk=1>Pizzeria Libretto (4.5)</a></div>`)[0];
+                popup_243014d9d64c5c5be62dd133794a6483.setContent(html_f8ce71a6cb7d98d6f836608fa5c10211);
+            
+        
+
+        marker_cb001da7b4afd4ea0a37de2b15f3f7f8.bindPopup(popup_243014d9d64c5c5be62dd133794a6483)
+        ;
+
+        
+    
+    
+            marker_cb001da7b4afd4ea0a37de2b15f3f7f8.bindTooltip(
+                `<div>
+                     550 Danforth Ave
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7f08e3a5156cf99f8c003349f5af62e = L.marker(
+                [43.64234, -79.3834484],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_6b6901b03fd2361f6d36a48a18af483b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a7f08e3a5156cf99f8c003349f5af62e.setIcon(icon_6b6901b03fd2361f6d36a48a18af483b);
+        
+    
+        var popup_875102e12d34d076ce37a48194659e3f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0aaea373a521a39f126b1cacad11e8fb = $(`<div id="html_0aaea373a521a39f126b1cacad11e8fb" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Panago+Pizza/data=!4m7!3m6!1s0x882b34d4c1495215:0x1dd5a05978685a80!8m2!3d43.64234!4d-79.3834484!16s%2Fg%2F1tltm_m6!19sChIJFVJJwdQ0K4gRgFpoeFmg1R0?authuser=0&hl=en&rclk=1>Panago Pizza (4.3)</a></div>`)[0];
+                popup_875102e12d34d076ce37a48194659e3f.setContent(html_0aaea373a521a39f126b1cacad11e8fb);
+            
+        
+
+        marker_a7f08e3a5156cf99f8c003349f5af62e.bindPopup(popup_875102e12d34d076ce37a48194659e3f)
+        ;
+
+        
+    
+    
+            marker_a7f08e3a5156cf99f8c003349f5af62e.bindTooltip(
+                `<div>
+                     133 Bremner Blvd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_372b9941c8266ee62233bd40f2cea135 = L.marker(
+                [43.6490363, -79.420317],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_74284800972c2ebe3f28eb5487cc932d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_372b9941c8266ee62233bd40f2cea135.setIcon(icon_74284800972c2ebe3f28eb5487cc932d);
+        
+    
+        var popup_de4bbc92e7ec08ce57229cbee0e079af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad5b5b70c22c3bb1e4db7bd698057a19 = $(`<div id="html_ad5b5b70c22c3bb1e4db7bd698057a19" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Pizzeria+Libretto/data=!4m7!3m6!1s0x882b34f943508ed1:0x8b83593d5b8ac926!8m2!3d43.6490363!4d-79.420317!16s%2Fg%2F1tcty5h3!19sChIJ0Y5QQ_k0K4gRJsmKWz1Zg4s?authuser=0&hl=en&rclk=1>Pizzeria Libretto (4.5)</a></div>`)[0];
+                popup_de4bbc92e7ec08ce57229cbee0e079af.setContent(html_ad5b5b70c22c3bb1e4db7bd698057a19);
+            
+        
+
+        marker_372b9941c8266ee62233bd40f2cea135.bindPopup(popup_de4bbc92e7ec08ce57229cbee0e079af)
+        ;
+
+        
+    
+    
+            marker_372b9941c8266ee62233bd40f2cea135.bindTooltip(
+                `<div>
+                     221 Ossington Ave
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9cd3444918ff92bb5f6b07569d293f28 = L.marker(
+                [43.6484999, -79.3849529],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_1f8b877a3a5eb38edf98188d4370c516 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9cd3444918ff92bb5f6b07569d293f28.setIcon(icon_1f8b877a3a5eb38edf98188d4370c516);
+        
+    
+        var popup_cb19272b706ccd50ebff821770be427f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ecb531a8132044a56efe29dbe5a6ce2e = $(`<div id="html_ecb531a8132044a56efe29dbe5a6ce2e" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Pizzeria+Libretto+-+University/data=!4m7!3m6!1s0x882b34d216d97735:0x46cb98761071a536!8m2!3d43.6484999!4d-79.3849529!16s%2Fg%2F11b6g9y5zt!19sChIJNXfZFtI0K4gRNqVxEHaYy0Y?authuser=0&hl=en&rclk=1>Pizzeria Libretto - University (4.4)</a></div>`)[0];
+                popup_cb19272b706ccd50ebff821770be427f.setContent(html_ecb531a8132044a56efe29dbe5a6ce2e);
+            
+        
+
+        marker_9cd3444918ff92bb5f6b07569d293f28.bindPopup(popup_cb19272b706ccd50ebff821770be427f)
+        ;
+
+        
+    
+    
+            marker_9cd3444918ff92bb5f6b07569d293f28.bindTooltip(
+                `<div>
+                     155 University Ave
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fb95ae25f2fffbd1dd6d11b78a3ef47c = L.marker(
+                [43.6795797, -79.4364678],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_61d0ba868e7c4d3b85fc5fd4e1643ead = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_fb95ae25f2fffbd1dd6d11b78a3ef47c.setIcon(icon_61d0ba868e7c4d3b85fc5fd4e1643ead);
+        
+    
+        var popup_ef6a6f8a84466969c90038c88ad43e99 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6dcce9bae0da802bbcdf0a593edba02 = $(`<div id="html_a6dcce9bae0da802bbcdf0a593edba02" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Slice+Of+Toronto/data=!4m7!3m6!1s0x882b3479d1fad017:0xa9b597bbe3feb2fd!8m2!3d43.6795797!4d-79.4364678!16s%2Fg%2F11gmywbvnh!19sChIJF9D60Xk0K4gR_bL-47uXtak?authuser=0&hl=en&rclk=1>Slice Of Toronto (4.7)</a></div>`)[0];
+                popup_ef6a6f8a84466969c90038c88ad43e99.setContent(html_a6dcce9bae0da802bbcdf0a593edba02);
+            
+        
+
+        marker_fb95ae25f2fffbd1dd6d11b78a3ef47c.bindPopup(popup_ef6a6f8a84466969c90038c88ad43e99)
+        ;
+
+        
+    
+    
+            marker_fb95ae25f2fffbd1dd6d11b78a3ef47c.bindTooltip(
+                `<div>
+                     968 St Clair Ave W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_68874f48c1fd40ed5284cf633caceb2f = L.marker(
+                [43.6517122, -79.4094993],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_5a9a927eb3c95ce60ceceb8eb0bcd454 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_68874f48c1fd40ed5284cf633caceb2f.setIcon(icon_5a9a927eb3c95ce60ceceb8eb0bcd454);
+        
+    
+        var popup_730b4509096bcb8097d5447615c82900 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6279c67495dd32b438cbe71fa130a34 = $(`<div id="html_e6279c67495dd32b438cbe71fa130a34" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/The+Fourth+Man+in+the+Fire+Pizzeria/data=!4m7!3m6!1s0x882b35b80fe171e1:0x5cb6aaf6be90f5c8!8m2!3d43.6517122!4d-79.4094993!16s%2Fg%2F11fmxk6c6m!19sChIJ4XHhD7g1K4gRyPWQvvaqtlw?authuser=0&hl=en&rclk=1>The Fourth Man in the Fire Pizzeria (4.5)</a></div>`)[0];
+                popup_730b4509096bcb8097d5447615c82900.setContent(html_e6279c67495dd32b438cbe71fa130a34);
+            
+        
+
+        marker_68874f48c1fd40ed5284cf633caceb2f.bindPopup(popup_730b4509096bcb8097d5447615c82900)
+        ;
+
+        
+    
+    
+            marker_68874f48c1fd40ed5284cf633caceb2f.bindTooltip(
+                `<div>
+                     832 Dundas St W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c4e081fcfaa8d6384ebaa09f2682bef = L.marker(
+                [43.7093346, -79.3986467],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_bc591148e427d2cc2c3828608ddf2c86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9c4e081fcfaa8d6384ebaa09f2682bef.setIcon(icon_bc591148e427d2cc2c3828608ddf2c86);
+        
+    
+        var popup_6aba1193a43733ae0d50d93aaf20cc3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f680870b132e9442b6534c89c161cf2 = $(`<div id="html_9f680870b132e9442b6534c89c161cf2" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Grazie+Ristorante/data=!4m7!3m6!1s0x882b332312be25ff:0x8117c5e21bea71bc!8m2!3d43.7093346!4d-79.3986467!16s%2Fg%2F1thhl446!19sChIJ_yW-EiMzK4gRvHHqG-LFF4E?authuser=0&hl=en&rclk=1>Grazie Ristorante (4.5)</a></div>`)[0];
+                popup_6aba1193a43733ae0d50d93aaf20cc3e.setContent(html_9f680870b132e9442b6534c89c161cf2);
+            
+        
+
+        marker_9c4e081fcfaa8d6384ebaa09f2682bef.bindPopup(popup_6aba1193a43733ae0d50d93aaf20cc3e)
+        ;
+
+        
+    
+    
+            marker_9c4e081fcfaa8d6384ebaa09f2682bef.bindTooltip(
+                `<div>
+                     2373 Yonge St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ecfa8044191a9c8ecf590a662871b272 = L.marker(
+                [43.6659374, -79.3875198],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_6d75d91c5ba3217c9130fb7533bf5289 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ecfa8044191a9c8ecf590a662871b272.setIcon(icon_6d75d91c5ba3217c9130fb7533bf5289);
+        
+    
+        var popup_37615aee20c07fb2c386ce9fb59339f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf347d8df2167e0d02b3e0d39910829d = $(`<div id="html_cf347d8df2167e0d02b3e0d39910829d" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Sol+Pizza/data=!4m7!3m6!1s0x882b354558298dbd:0x7c377340d2b5e459!8m2!3d43.6659374!4d-79.3875198!16s%2Fg%2F11sh5bq8r7!19sChIJvY0pWEU1K4gRWeS10kBzN3w?authuser=0&hl=en&rclk=1>Sol Pizza (4.9)</a></div>`)[0];
+                popup_37615aee20c07fb2c386ce9fb59339f3.setContent(html_cf347d8df2167e0d02b3e0d39910829d);
+            
+        
+
+        marker_ecfa8044191a9c8ecf590a662871b272.bindPopup(popup_37615aee20c07fb2c386ce9fb59339f3)
+        ;
+
+        
+    
+    
+            marker_ecfa8044191a9c8ecf590a662871b272.bindTooltip(
+                `<div>
+                     1033 Bay St. Unit 9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ee15d5afac78d1132487d1c3607ee1c = L.marker(
+                [43.6675743, -79.4004614],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_d6cef05175a252203649970496171335 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1ee15d5afac78d1132487d1c3607ee1c.setIcon(icon_d6cef05175a252203649970496171335);
+        
+    
+        var popup_7551dd09ef747975c395e4ac006c7322 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8bf3d73a960427d81f2458c381d49d32 = $(`<div id="html_8bf3d73a960427d81f2458c381d49d32" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Bar+Mercurio/data=!4m7!3m6!1s0x882b34bd0749664b:0x112d168d82ea85b8!8m2!3d43.6675743!4d-79.4004614!16s%2Fg%2F1vyxk0z7!19sChIJS2ZJB700K4gRuIXqgo0WLRE?authuser=0&hl=en&rclk=1>Bar Mercurio (4.4)</a></div>`)[0];
+                popup_7551dd09ef747975c395e4ac006c7322.setContent(html_8bf3d73a960427d81f2458c381d49d32);
+            
+        
+
+        marker_1ee15d5afac78d1132487d1c3607ee1c.bindPopup(popup_7551dd09ef747975c395e4ac006c7322)
+        ;
+
+        
+    
+    
+            marker_1ee15d5afac78d1132487d1c3607ee1c.bindTooltip(
+                `<div>
+                     270 Bloor St W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d559f59cbb7f6439d19c1ed5fed96bc = L.marker(
+                [43.6470238, -79.3932927],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_73fa1c961f1ca1534543dc25b0109f19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6d559f59cbb7f6439d19c1ed5fed96bc.setIcon(icon_73fa1c961f1ca1534543dc25b0109f19);
+        
+    
+        var popup_490f272c1eaab7017cf653773dc195ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33ce4bf7ec2fa814cf974b6114a89a28 = $(`<div id="html_33ce4bf7ec2fa814cf974b6114a89a28" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/General+Assembly+Pizza/data=!4m7!3m6!1s0x882b34da43daaaab:0x18025cf323a5010a!8m2!3d43.6470238!4d-79.3932927!16s%2Fg%2F11gcx_64kx!19sChIJq6raQ9o0K4gRCgGlI_NcAhg?authuser=0&hl=en&rclk=1>General Assembly Pizza (4.3)</a></div>`)[0];
+                popup_490f272c1eaab7017cf653773dc195ae.setContent(html_33ce4bf7ec2fa814cf974b6114a89a28);
+            
+        
+
+        marker_6d559f59cbb7f6439d19c1ed5fed96bc.bindPopup(popup_490f272c1eaab7017cf653773dc195ae)
+        ;
+
+        
+    
+    
+            marker_6d559f59cbb7f6439d19c1ed5fed96bc.bindTooltip(
+                `<div>
+                     333 Adelaide St W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_137d423f7e659786d98da9220854a372 = L.marker(
+                [43.6470025, -79.4064878],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_0a41621ec6bab2130c341f422a807093 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_137d423f7e659786d98da9220854a372.setIcon(icon_0a41621ec6bab2130c341f422a807093);
+        
+    
+        var popup_ff08b76f47176043945c6df657def4cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d69f208ceb8d25e6a8d9048bf3ffe832 = $(`<div id="html_d69f208ceb8d25e6a8d9048bf3ffe832" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/North+of+Brooklyn+Pizzeria/data=!4m7!3m6!1s0x882b34e6cc344d99:0x9a5820e8fa5631dc!8m2!3d43.6470025!4d-79.4064878!16s%2Fg%2F124sss705!19sChIJmU00zOY0K4gR3DFW-uggWJo?authuser=0&hl=en&rclk=1>North of Brooklyn Pizzeria (4.4)</a></div>`)[0];
+                popup_ff08b76f47176043945c6df657def4cb.setContent(html_d69f208ceb8d25e6a8d9048bf3ffe832);
+            
+        
+
+        marker_137d423f7e659786d98da9220854a372.bindPopup(popup_ff08b76f47176043945c6df657def4cb)
+        ;
+
+        
+    
+    
+            marker_137d423f7e659786d98da9220854a372.bindTooltip(
+                `<div>
+                     650 Queen St W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_58a73b3f0842c5b5ca6255966d9f692a = L.marker(
+                [43.6578177, -79.4017248],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_ce14cc56ab929112cbfb9a229aadbdbd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_58a73b3f0842c5b5ca6255966d9f692a.setIcon(icon_ce14cc56ab929112cbfb9a229aadbdbd);
+        
+    
+        var popup_9edee5fbbe03e7471cb43b19dcca98c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddcf2f979bfee1f7a103429d63866a2a = $(`<div id="html_ddcf2f979bfee1f7a103429d63866a2a" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Fresca+Pizza+and+Pasta/data=!4m7!3m6!1s0x882b34c1c936eb4d:0x7b7ce3dd6b266766!8m2!3d43.6578177!4d-79.4017248!16s%2Fg%2F1hc371vyh!19sChIJTes2ycE0K4gRZmcma93jfHs?authuser=0&hl=en&rclk=1>Fresca Pizza and Pasta (4.6)</a></div>`)[0];
+                popup_9edee5fbbe03e7471cb43b19dcca98c6.setContent(html_ddcf2f979bfee1f7a103429d63866a2a);
+            
+        
+
+        marker_58a73b3f0842c5b5ca6255966d9f692a.bindPopup(popup_9edee5fbbe03e7471cb43b19dcca98c6)
+        ;
+
+        
+    
+    
+            marker_58a73b3f0842c5b5ca6255966d9f692a.bindTooltip(
+                `<div>
+                     302 College St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd454b16f781329bb5dc30b3363372cb = L.marker(
+                [43.6588904, -79.3839677],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_a06136771fcef05bf1f41388718fc4a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_dd454b16f781329bb5dc30b3363372cb.setIcon(icon_a06136771fcef05bf1f41388718fc4a7);
+        
+    
+        var popup_ea7d83c87b76cd3221627bbb6134fdcc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e31cf86d782e675855e996d467a00f3 = $(`<div id="html_9e31cf86d782e675855e996d467a00f3" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Panago+Pizza/data=!4m7!3m6!1s0x882b34d4c1495215:0x16b6598bcde9237d!8m2!3d43.6588904!4d-79.3839677!16s%2Fg%2F1hm5k045q!19sChIJFVJJwdQ0K4gRfSPpzYtZthY?authuser=0&hl=en&rclk=1>Panago Pizza (4.7)</a></div>`)[0];
+                popup_ea7d83c87b76cd3221627bbb6134fdcc.setContent(html_9e31cf86d782e675855e996d467a00f3);
+            
+        
+
+        marker_dd454b16f781329bb5dc30b3363372cb.bindPopup(popup_ea7d83c87b76cd3221627bbb6134fdcc)
+        ;
+
+        
+    
+    
+            marker_dd454b16f781329bb5dc30b3363372cb.bindTooltip(
+                `<div>
+                     44 Gerrard St W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_82ceb69288ee771779feb983dc65f755 = L.marker(
+                [43.6701252, -79.3927223],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_66d5eaecd12b4444f7289eb32b66a46a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_82ceb69288ee771779feb983dc65f755.setIcon(icon_66d5eaecd12b4444f7289eb32b66a46a);
+        
+    
+        var popup_e0aa92fa4135754041404c1c3a71b775 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c963fb40e2dd2f7335efc92d9b556180 = $(`<div id="html_c963fb40e2dd2f7335efc92d9b556180" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Dimmi+Bar+%26+Trattoria/data=!4m7!3m6!1s0x882b34a546bb49dd:0xe61b3b72645918bc!8m2!3d43.6701252!4d-79.3927223!16s%2Fg%2F1tgnmq4j!19sChIJ3Um7RqU0K4gRvBhZZHI7G-Y?authuser=0&hl=en&rclk=1>Dimmi Bar & Trattoria (4.4)</a></div>`)[0];
+                popup_e0aa92fa4135754041404c1c3a71b775.setContent(html_c963fb40e2dd2f7335efc92d9b556180);
+            
+        
+
+        marker_82ceb69288ee771779feb983dc65f755.bindPopup(popup_e0aa92fa4135754041404c1c3a71b775)
+        ;
+
+        
+    
+    
+            marker_82ceb69288ee771779feb983dc65f755.bindTooltip(
+                `<div>
+                     140 Cumberland St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f1723131e48fb6b06551d3310433808 = L.marker(
+                [43.6436103, -79.4048053],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_5d2ce6879d3021caa39d5e87afea90b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3f1723131e48fb6b06551d3310433808.setIcon(icon_5d2ce6879d3021caa39d5e87afea90b6);
+        
+    
+        var popup_29731dde80d3b8edf7e59ccab66b0008 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4867c57b3ea6fb1322963d68d6dd11e3 = $(`<div id="html_4867c57b3ea6fb1322963d68d6dd11e3" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Freshslice+Pizza/data=!4m7!3m6!1s0x882b359a5f688543:0xf3239b1ab591c14e!8m2!3d43.6436103!4d-79.4048053!16s%2Fg%2F11kxltbxrw!19sChIJQ4VoX5o1K4gRTsGRtRqbI_M?authuser=0&hl=en&rclk=1>Freshslice Pizza (4.8)</a></div>`)[0];
+                popup_29731dde80d3b8edf7e59ccab66b0008.setContent(html_4867c57b3ea6fb1322963d68d6dd11e3);
+            
+        
+
+        marker_3f1723131e48fb6b06551d3310433808.bindPopup(popup_29731dde80d3b8edf7e59ccab66b0008)
+        ;
+
+        
+    
+    
+            marker_3f1723131e48fb6b06551d3310433808.bindTooltip(
+                `<div>
+                     744 King St W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b0dc6fde4a9567fea57356b58af6d26 = L.marker(
+                [43.6541381, -79.4132242],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_43f7b8a5049a6ef830168964c5e78d78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1b0dc6fde4a9567fea57356b58af6d26.setIcon(icon_43f7b8a5049a6ef830168964c5e78d78);
+        
+    
+        var popup_ba9abbd59bd3c97100a96550c9589de0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee8f4a8d785a85396a5803a53c02df24 = $(`<div id="html_ee8f4a8d785a85396a5803a53c02df24" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Bitondo+Pizzeria/data=!4m7!3m6!1s0x882b34efce751165:0xa7e4afc6c6005dbd!8m2!3d43.6541381!4d-79.4132242!16s%2Fg%2F1tfx5jd_!19sChIJZRF1zu80K4gRvV0Axsav5Kc?authuser=0&hl=en&rclk=1>Bitondo Pizzeria (4.5)</a></div>`)[0];
+                popup_ba9abbd59bd3c97100a96550c9589de0.setContent(html_ee8f4a8d785a85396a5803a53c02df24);
+            
+        
+
+        marker_1b0dc6fde4a9567fea57356b58af6d26.bindPopup(popup_ba9abbd59bd3c97100a96550c9589de0)
+        ;
+
+        
+    
+    
+            marker_1b0dc6fde4a9567fea57356b58af6d26.bindTooltip(
+                `<div>
+                     11 Clinton St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3bdf7af241011d80c28a5b6ff997bba2 = L.marker(
+                [43.668442, -79.386702],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_acc70d121ca547f22aa6b7875ede4ceb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3bdf7af241011d80c28a5b6ff997bba2.setIcon(icon_acc70d121ca547f22aa6b7875ede4ceb);
+        
+    
+        var popup_85a5cb8d180f4bc090ae06202b296b1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_218901149313569d3d9cd971e5f9f202 = $(`<div id="html_218901149313569d3d9cd971e5f9f202" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/8Mile+Detroit+Style+Pizza/data=!4m7!3m6!1s0x882b356a8692bcaf:0x5531b97279e538f4!8m2!3d43.668442!4d-79.386702!16s%2Fg%2F11jg0tgbpg!19sChIJr7yShmo1K4gR9DjleXK5MVU?authuser=0&hl=en&rclk=1>8Mile Detroit Style Pizza (4.5)</a></div>`)[0];
+                popup_85a5cb8d180f4bc090ae06202b296b1f.setContent(html_218901149313569d3d9cd971e5f9f202);
+            
+        
+
+        marker_3bdf7af241011d80c28a5b6ff997bba2.bindPopup(popup_85a5cb8d180f4bc090ae06202b296b1f)
+        ;
+
+        
+    
+    
+            marker_3bdf7af241011d80c28a5b6ff997bba2.bindTooltip(
+                `<div>
+                     9 Charles St W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_acc66385b6081e6dea2052ba538d9c6b = L.marker(
+                [43.6615922, -79.4282349],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_84a7cb9fd5ae18aeaacc3a82e8d286cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_acc66385b6081e6dea2052ba538d9c6b.setIcon(icon_84a7cb9fd5ae18aeaacc3a82e8d286cf);
+        
+    
+        var popup_12ca6fc6c9b1ced3f9b58dc6c976de3f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33a11101f11acfa7eb97d7f666a8ff96 = $(`<div id="html_33a11101f11acfa7eb97d7f666a8ff96" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Ambassador+Pizza+Co./data=!4m7!3m6!1s0x882b35718c12e911:0xd459949d748a161c!8m2!3d43.6615922!4d-79.4282349!16s%2Fg%2F11nsr8rmz6!19sChIJEekSjHE1K4gRHBaKdJ2UWdQ?authuser=0&hl=en&rclk=1>Ambassador Pizza Co. (4.8)</a></div>`)[0];
+                popup_12ca6fc6c9b1ced3f9b58dc6c976de3f.setContent(html_33a11101f11acfa7eb97d7f666a8ff96);
+            
+        
+
+        marker_acc66385b6081e6dea2052ba538d9c6b.bindPopup(popup_12ca6fc6c9b1ced3f9b58dc6c976de3f)
+        ;
+
+        
+    
+    
+            marker_acc66385b6081e6dea2052ba538d9c6b.bindTooltip(
+                `<div>
+                     946 Bloor St W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d017131be981a0e7d5457febc8c660e = L.marker(
+                [43.784063, -79.1698905],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_824d2b5ac04eb6b52dbbe406012f9b5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6d017131be981a0e7d5457febc8c660e.setIcon(icon_824d2b5ac04eb6b52dbbe406012f9b5a);
+        
+    
+        var popup_8e263077558602b1d94a08b4fa83fc91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e8cfdc4626230d5c0cd7882e0f1212d = $(`<div id="html_7e8cfdc4626230d5c0cd7882e0f1212d" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Fratelli+Village+Pizzeria/data=!4m7!3m6!1s0x89d4da4445ddb873:0x6d9ac30094fa8070!8m2!3d43.784063!4d-79.1698905!16s%2Fg%2F1vzv4n6t!19sChIJc7jdRUTa1IkRcID6lADDmm0?authuser=0&hl=en&rclk=1>Fratelli Village Pizzeria (4.5)</a></div>`)[0];
+                popup_8e263077558602b1d94a08b4fa83fc91.setContent(html_7e8cfdc4626230d5c0cd7882e0f1212d);
+            
+        
+
+        marker_6d017131be981a0e7d5457febc8c660e.bindPopup(popup_8e263077558602b1d94a08b4fa83fc91)
+        ;
+
+        
+    
+    
+            marker_6d017131be981a0e7d5457febc8c660e.bindTooltip(
+                `<div>
+                     384 Old Kingston Rd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_461c3ccb33da7e7834386648f39ce13d = L.marker(
+                [43.650437, -79.3980951],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_7ebff07a6e45127353dabdbf5c3c5253 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_461c3ccb33da7e7834386648f39ce13d.setIcon(icon_7ebff07a6e45127353dabdbf5c3c5253);
+        
+    
+        var popup_b0e06b1561fa4620ad3170ff17bf5513 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_617cb46b5a539ba8fc386c30e51e8d85 = $(`<div id="html_617cb46b5a539ba8fc386c30e51e8d85" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Maker+Pizza+Cameron/data=!4m7!3m6!1s0x882b34dcafc53cc9:0xafcae1d2248e05a8!8m2!3d43.650437!4d-79.3980951!16s%2Fg%2F11bx1q7xyl!19sChIJyTzFr9w0K4gRqAWOJNLhyq8?authuser=0&hl=en&rclk=1>Maker Pizza Cameron (4.3)</a></div>`)[0];
+                popup_b0e06b1561fa4620ad3170ff17bf5513.setContent(html_617cb46b5a539ba8fc386c30e51e8d85);
+            
+        
+
+        marker_461c3ccb33da7e7834386648f39ce13d.bindPopup(popup_b0e06b1561fa4620ad3170ff17bf5513)
+        ;
+
+        
+    
+    
+            marker_461c3ccb33da7e7834386648f39ce13d.bindTooltip(
+                `<div>
+                     59 Cameron St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7cca5e9ff13927a6d435e57646673fbc = L.marker(
+                [43.6461154, -79.4231443],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_5f2b68a7e3c3d75e35520cef74e2cab2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7cca5e9ff13927a6d435e57646673fbc.setIcon(icon_5f2b68a7e3c3d75e35520cef74e2cab2);
+        
+    
+        var popup_58a61802cff9783ae30ef470fa676e13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cfffce9382c852c0187ab45ddf7087be = $(`<div id="html_cfffce9382c852c0187ab45ddf7087be" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Pizzeria+Badiali/data=!4m7!3m6!1s0x882b35a1614407b9:0xcb1a69361f90bf49!8m2!3d43.6461154!4d-79.4231443!16s%2Fg%2F11rgbv77d2!19sChIJuQdEYaE1K4gRSb-QHzZpGss?authuser=0&hl=en&rclk=1>Pizzeria Badiali (4.7)</a></div>`)[0];
+                popup_58a61802cff9783ae30ef470fa676e13.setContent(html_cfffce9382c852c0187ab45ddf7087be);
+            
+        
+
+        marker_7cca5e9ff13927a6d435e57646673fbc.bindPopup(popup_58a61802cff9783ae30ef470fa676e13)
+        ;
+
+        
+    
+    
+            marker_7cca5e9ff13927a6d435e57646673fbc.bindTooltip(
+                `<div>
+                     181 Dovercourt Rd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a2f1d7515487034a6991c2e17f03635 = L.marker(
+                [43.6662398, -79.4069111],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_d6a931795e9ddb8fd3c6e8a4b0082ce8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6a2f1d7515487034a6991c2e17f03635.setIcon(icon_d6a931795e9ddb8fd3c6e8a4b0082ce8);
+        
+    
+        var popup_28a7631ada731f3ec7d4d9e8feb72028 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0cb91f018dcf17a068c2b7fec07adb9 = $(`<div id="html_d0cb91f018dcf17a068c2b7fec07adb9" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Famoso+Neapolitan+Pizzeria+-+Annex/data=!4m7!3m6!1s0x882b34969919e3e9:0x1577b045db327f86!8m2!3d43.6662398!4d-79.4069111!16s%2Fg%2F1hdz0x684!19sChIJ6eMZmZY0K4gRhn8y20WwdxU?authuser=0&hl=en&rclk=1>Famoso Neapolitan Pizzeria - Annex (4.4)</a></div>`)[0];
+                popup_28a7631ada731f3ec7d4d9e8feb72028.setContent(html_d0cb91f018dcf17a068c2b7fec07adb9);
+            
+        
+
+        marker_6a2f1d7515487034a6991c2e17f03635.bindPopup(popup_28a7631ada731f3ec7d4d9e8feb72028)
+        ;
+
+        
+    
+    
+            marker_6a2f1d7515487034a6991c2e17f03635.bindTooltip(
+                `<div>
+                     386 Bloor St W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1729cbd31dfe572b5f7927cbeabd0750 = L.marker(
+                [43.6510119, -79.3814402],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_40e723583e5e0811629a312e84163d32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1729cbd31dfe572b5f7927cbeabd0750.setIcon(icon_40e723583e5e0811629a312e84163d32);
+        
+    
+        var popup_0a0c890d04edbbfab00d2d471ba57f3a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25cfc7e32189f0b277ac379a39769366 = $(`<div id="html_25cfc7e32189f0b277ac379a39769366" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Za+Cafe+Pizzeria+%26+Bar/data=!4m7!3m6!1s0x882b35fc4a70afb1:0xc7ec8c0be93a450c!8m2!3d43.6510119!4d-79.3814402!16s%2Fg%2F11j7gy76vy!19sChIJsa9wSvw1K4gRDEU66QuM7Mc?authuser=0&hl=en&rclk=1>Za Cafe Pizzeria & Bar (4.6)</a></div>`)[0];
+                popup_0a0c890d04edbbfab00d2d471ba57f3a.setContent(html_25cfc7e32189f0b277ac379a39769366);
+            
+        
+
+        marker_1729cbd31dfe572b5f7927cbeabd0750.bindPopup(popup_0a0c890d04edbbfab00d2d471ba57f3a)
+        ;
+
+        
+    
+    
+            marker_1729cbd31dfe572b5f7927cbeabd0750.bindTooltip(
+                `<div>
+                     372 Bay St.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_54ef3da7daed464b401a21c7d13918a4 = L.marker(
+                [43.6633264, -79.4026134],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_6045d37f1bc544c46eeea34cfd358ec1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_54ef3da7daed464b401a21c7d13918a4.setIcon(icon_6045d37f1bc544c46eeea34cfd358ec1);
+        
+    
+        var popup_53de1e136d7f28f16085f189eec70b90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06d26f7b91488b512844078756c6d34f = $(`<div id="html_06d26f7b91488b512844078756c6d34f" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Cora+Pizza/data=!4m7!3m6!1s0x882b34be2ed74021:0x2bcf99ca3d76be31!8m2!3d43.6633264!4d-79.4026134!16s%2Fg%2F1tcwrs7_!19sChIJIUDXLr40K4gRMb52PcqZzys?authuser=0&hl=en&rclk=1>Cora Pizza (4.2)</a></div>`)[0];
+                popup_53de1e136d7f28f16085f189eec70b90.setContent(html_06d26f7b91488b512844078756c6d34f);
+            
+        
+
+        marker_54ef3da7daed464b401a21c7d13918a4.bindPopup(popup_53de1e136d7f28f16085f189eec70b90)
+        ;
+
+        
+    
+    
+            marker_54ef3da7daed464b401a21c7d13918a4.bindTooltip(
+                `<div>
+                     656 Spadina Ave. A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e8136d1882010107662700bc02290c39 = L.marker(
+                [43.6476356, -79.4025341],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_ff7803fb1dff87fdac105cf4e99db24e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e8136d1882010107662700bc02290c39.setIcon(icon_ff7803fb1dff87fdac105cf4e99db24e);
+        
+    
+        var popup_9db695b1d896079e18954e9304f744dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe75e81a639919ab93820983b5e05b5a = $(`<div id="html_fe75e81a639919ab93820983b5e05b5a" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Pizzeria+Du/data=!4m7!3m6!1s0x882b353bf9fa249d:0xf98f47dbfd7c21a0!8m2!3d43.6476356!4d-79.4025341!16s%2Fg%2F11gjwft53z!19sChIJnST6-Ts1K4gRoCF8_dtHj_k?authuser=0&hl=en&rclk=1>Pizzeria Du (4.6)</a></div>`)[0];
+                popup_9db695b1d896079e18954e9304f744dc.setContent(html_fe75e81a639919ab93820983b5e05b5a);
+            
+        
+
+        marker_e8136d1882010107662700bc02290c39.bindPopup(popup_9db695b1d896079e18954e9304f744dc)
+        ;
+
+        
+    
+    
+            marker_e8136d1882010107662700bc02290c39.bindTooltip(
+                `<div>
+                     536 Queen St W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e7b0f0ac0d473fc4be322958fb9eb9c7 = L.marker(
+                [43.6692264, -79.4391641],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_32986a0938a05138b936d169e68f0008 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e7b0f0ac0d473fc4be322958fb9eb9c7.setIcon(icon_32986a0938a05138b936d169e68f0008);
+        
+    
+        var popup_b14e70fa815199671495a80df910752c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_018ed5bf333b62c05d3f99b1229ae358 = $(`<div id="html_018ed5bf333b62c05d3f99b1229ae358" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/North+of+Brooklyn+Pizzeria/data=!4m7!3m6!1s0x882b346f2575a3c7:0x1a2943768f278052!8m2!3d43.6692264!4d-79.4391641!16s%2Fg%2F11c0w8xg9_!19sChIJx6N1JW80K4gRUoAnj3ZDKRo?authuser=0&hl=en&rclk=1>North of Brooklyn Pizzeria (4.5)</a></div>`)[0];
+                popup_b14e70fa815199671495a80df910752c.setContent(html_018ed5bf333b62c05d3f99b1229ae358);
+            
+        
+
+        marker_e7b0f0ac0d473fc4be322958fb9eb9c7.bindPopup(popup_b14e70fa815199671495a80df910752c)
+        ;
+
+        
+    
+    
+            marker_e7b0f0ac0d473fc4be322958fb9eb9c7.bindTooltip(
+                `<div>
+                     229 Geary Ave
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5cdc8f59cd710b6e2a79a74267da8b1b = L.marker(
+                [43.6639496, -79.3803757],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_f1afc6f6c2582bbc22942723aa3bca05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5cdc8f59cd710b6e2a79a74267da8b1b.setIcon(icon_f1afc6f6c2582bbc22942723aa3bca05);
+        
+    
+        var popup_f888a8d3385f1f978615431def3a38f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5a731b9da844aa0db86892b6bdeece6 = $(`<div id="html_b5a731b9da844aa0db86892b6bdeece6" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Pizza+Studio/data=!4m7!3m6!1s0x882b35a92012392b:0x1b8b58a8f3e2d395!8m2!3d43.6639496!4d-79.3803757!16s%2Fg%2F11ql1fyfv4!19sChIJKzkSIKk1K4gRldPi86hYixs?authuser=0&hl=en&rclk=1>Pizza Studio (4.5)</a></div>`)[0];
+                popup_f888a8d3385f1f978615431def3a38f3.setContent(html_b5a731b9da844aa0db86892b6bdeece6);
+            
+        
+
+        marker_5cdc8f59cd710b6e2a79a74267da8b1b.bindPopup(popup_f888a8d3385f1f978615431def3a38f3)
+        ;
+
+        
+    
+    
+            marker_5cdc8f59cd710b6e2a79a74267da8b1b.bindTooltip(
+                `<div>
+                     500 Church St Unit 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87e8dceee17efd68124f472a59f706ce = L.marker(
+                [43.6551155, -79.4021048],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_a6434343f9d2dde9daa172528af472fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_87e8dceee17efd68124f472a59f706ce.setIcon(icon_a6434343f9d2dde9daa172528af472fd);
+        
+    
+        var popup_c6d3aa67fce6059798ea0f77a31317c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c91c00bcb1c788e790089cdfb236760d = $(`<div id="html_c91c00bcb1c788e790089cdfb236760d" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Pizzeria+da+Mario+Kensington/data=!4m7!3m6!1s0x882b35890ae316ad:0x936d5714257a9240!8m2!3d43.6551155!4d-79.4021048!16s%2Fg%2F11mvsl338y!19sChIJrRbjCok1K4gRQJJ6JRRXbZM?authuser=0&hl=en&rclk=1>Pizzeria da Mario Kensington (4.8)</a></div>`)[0];
+                popup_c6d3aa67fce6059798ea0f77a31317c2.setContent(html_c91c00bcb1c788e790089cdfb236760d);
+            
+        
+
+        marker_87e8dceee17efd68124f472a59f706ce.bindPopup(popup_c6d3aa67fce6059798ea0f77a31317c2)
+        ;
+
+        
+    
+    
+            marker_87e8dceee17efd68124f472a59f706ce.bindTooltip(
+                `<div>
+                     253 Augusta Ave
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e0c33f1493a2800a423ba2256dfb78d9 = L.marker(
+                [43.6581758, -79.4877925],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_67344eca2ff0787f76ca028e1ff5b875 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e0c33f1493a2800a423ba2256dfb78d9.setIcon(icon_67344eca2ff0787f76ca028e1ff5b875);
+        
+    
+        var popup_bbeaa26b10360bde60ee8e39698b26f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad22fcb1b9a261a7a89f34f39691cd49 = $(`<div id="html_ad22fcb1b9a261a7a89f34f39691cd49" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Queen+Margherita+Pizza/data=!4m7!3m6!1s0x882b368de5147cd9:0x4c098e1bcd38be70!8m2!3d43.6581758!4d-79.4877925!16s%2Fg%2F12hk525mw!19sChIJ2XwU5Y02K4gRcL44zRuOCUw?authuser=0&hl=en&rclk=1>Queen Margherita Pizza (4.3)</a></div>`)[0];
+                popup_bbeaa26b10360bde60ee8e39698b26f7.setContent(html_ad22fcb1b9a261a7a89f34f39691cd49);
+            
+        
+
+        marker_e0c33f1493a2800a423ba2256dfb78d9.bindPopup(popup_bbeaa26b10360bde60ee8e39698b26f7)
+        ;
+
+        
+    
+    
+            marker_e0c33f1493a2800a423ba2256dfb78d9.bindTooltip(
+                `<div>
+                     785 Annette St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_10c418cd43a6f8fdd244e6e5ceb74e83 = L.marker(
+                [43.6451433, -79.3980755],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_2dbc7150b20a50653aa849714d4d8352 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_10c418cd43a6f8fdd244e6e5ceb74e83.setIcon(icon_2dbc7150b20a50653aa849714d4d8352);
+        
+    
+        var popup_f03cef6696ab6f4aa529ed23a1c443a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bda8d51dcea577df8a7143784cfefa0e = $(`<div id="html_bda8d51dcea577df8a7143784cfefa0e" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Four+Brothers+Pizza/data=!4m7!3m6!1s0x882b355c3357b0e7:0xdcda0f4a19588375!8m2!3d43.6451433!4d-79.3980755!16s%2Fg%2F11ry300j38!19sChIJ57BXM1w1K4gRdYNYGUoP2tw?authuser=0&hl=en&rclk=1>Four Brothers Pizza (4.4)</a></div>`)[0];
+                popup_f03cef6696ab6f4aa529ed23a1c443a7.setContent(html_bda8d51dcea577df8a7143784cfefa0e);
+            
+        
+
+        marker_10c418cd43a6f8fdd244e6e5ceb74e83.bindPopup(popup_f03cef6696ab6f4aa529ed23a1c443a7)
+        ;
+
+        
+    
+    
+            marker_10c418cd43a6f8fdd244e6e5ceb74e83.bindTooltip(
+                `<div>
+                     540 King St W unit 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_54cd52d4131d2ad6476c7b2b1a97724b = L.marker(
+                [43.648843, -79.368775],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_0a483960081cfd966e3bfc5c7b4e90f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_54cd52d4131d2ad6476c7b2b1a97724b.setIcon(icon_0a483960081cfd966e3bfc5c7b4e90f6);
+        
+    
+        var popup_31c91f585ec8ff0bad25bf4d07e0ffb3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86c1633c8c286bc50c547984e0c9768f = $(`<div id="html_86c1633c8c286bc50c547984e0c9768f" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Bellissimo+Pizzaria+%26+Ristorante/data=!4m7!3m6!1s0x89d4cb3aa3ff7761:0xceb346486f9a55d3!8m2!3d43.648843!4d-79.368775!16s%2Fg%2F1vvdw60v!19sChIJYXf_ozrL1IkR01Wab0hGs84?authuser=0&hl=en&rclk=1>Bellissimo Pizzaria & Ristorante (4.4)</a></div>`)[0];
+                popup_31c91f585ec8ff0bad25bf4d07e0ffb3.setContent(html_86c1633c8c286bc50c547984e0c9768f);
+            
+        
+
+        marker_54cd52d4131d2ad6476c7b2b1a97724b.bindPopup(popup_31c91f585ec8ff0bad25bf4d07e0ffb3)
+        ;
+
+        
+    
+    
+            marker_54cd52d4131d2ad6476c7b2b1a97724b.bindTooltip(
+                `<div>
+                     164 The Esplanade
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87144af9348b27f878e9418fd15e9218 = L.marker(
+                [43.6633088, -79.4025299],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_8d3f7af864be494d2b3d9398a1706f19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_87144af9348b27f878e9418fd15e9218.setIcon(icon_8d3f7af864be494d2b3d9398a1706f19);
+        
+    
+        var popup_541486e7479d892b9bd1b1b51b9d91b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b1b1c83c6926e2b30409a00505e19f2 = $(`<div id="html_7b1b1c83c6926e2b30409a00505e19f2" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/PAPA+CEO/data=!4m7!3m6!1s0x882b34be2e958e6b:0x2cd68c62b12352cf!8m2!3d43.6633088!4d-79.4025299!16s%2Fg%2F1tqpzwnp!19sChIJa46VLr40K4gRz1IjsWKM1iw?authuser=0&hl=en&rclk=1>PAPA CEO (4.5)</a></div>`)[0];
+                popup_541486e7479d892b9bd1b1b51b9d91b1.setContent(html_7b1b1c83c6926e2b30409a00505e19f2);
+            
+        
+
+        marker_87144af9348b27f878e9418fd15e9218.bindPopup(popup_541486e7479d892b9bd1b1b51b9d91b1)
+        ;
+
+        
+    
+    
+            marker_87144af9348b27f878e9418fd15e9218.bindTooltip(
+                `<div>
+                     654 Spadina Ave.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7eaa0acafadbf0de51042c79efe18b08 = L.marker(
+                [43.6729982, -79.4141649],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_9c1e6a0f23eb9cceb14ffce861682bac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7eaa0acafadbf0de51042c79efe18b08.setIcon(icon_9c1e6a0f23eb9cceb14ffce861682bac);
+        
+    
+        var popup_aa76f561bff5552acbab69fa634e9360 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9b590d2fb64af2035cf83210f5cdd3a = $(`<div id="html_a9b590d2fb64af2035cf83210f5cdd3a" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Detroit+Pizzeria+(Detroit+Style+Pizza)/data=!4m7!3m6!1s0x882b3590db096fcf:0x45861ce6437f4e85!8m2!3d43.6729982!4d-79.4141649!16s%2Fg%2F11ll8m8__9!19sChIJz28J25A1K4gRhU5_Q-YchkU?authuser=0&hl=en&rclk=1>Detroit Pizzeria (Detroit Style Pizza) (4.3)</a></div>`)[0];
+                popup_aa76f561bff5552acbab69fa634e9360.setContent(html_a9b590d2fb64af2035cf83210f5cdd3a);
+            
+        
+
+        marker_7eaa0acafadbf0de51042c79efe18b08.bindPopup(popup_aa76f561bff5552acbab69fa634e9360)
+        ;
+
+        
+    
+    
+            marker_7eaa0acafadbf0de51042c79efe18b08.bindTooltip(
+                `<div>
+                     1093 Bathurst St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e41f5919b3c6ff2d5d7a3960078d9ba4 = L.marker(
+                [43.675054, -79.343022],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_a30f903b7aa5c33f357dc2301386cf16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e41f5919b3c6ff2d5d7a3960078d9ba4.setIcon(icon_a30f903b7aa5c33f357dc2301386cf16);
+        
+    
+        var popup_0a302c94396219dcc9ac005476d87320 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd7a0efe886f9eb402ad541d9da8120c = $(`<div id="html_bd7a0efe886f9eb402ad541d9da8120c" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/One+Night+Only+Pizza/data=!4m7!3m6!1s0x89d4cdec9e752401:0x75dc945a563679cb!8m2!3d43.675054!4d-79.343022!16s%2Fg%2F11p9whgcw7!19sChIJASR1nuzN1IkRy3k2VlqU3HU?authuser=0&hl=en&rclk=1>One Night Only Pizza (4.7)</a></div>`)[0];
+                popup_0a302c94396219dcc9ac005476d87320.setContent(html_bd7a0efe886f9eb402ad541d9da8120c);
+            
+        
+
+        marker_e41f5919b3c6ff2d5d7a3960078d9ba4.bindPopup(popup_0a302c94396219dcc9ac005476d87320)
+        ;
+
+        
+    
+    
+            marker_e41f5919b3c6ff2d5d7a3960078d9ba4.bindTooltip(
+                `<div>
+                     581 Pape Ave
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a5dbdb4f69fffbae5c64417365304f96 = L.marker(
+                [43.654877, -79.4208934],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_4905b57fe57c5b927f9fbf6c370fe5f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a5dbdb4f69fffbae5c64417365304f96.setIcon(icon_4905b57fe57c5b927f9fbf6c370fe5f3);
+        
+    
+        var popup_0891f5b1070eb7b753a0652cbb93f47f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35882f2a36644d90927de0417ab5ece5 = $(`<div id="html_35882f2a36644d90927de0417ab5ece5" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Regina+Pizzeria+%26+Trattoria/data=!4m7!3m6!1s0x882b34f7215ac52f:0xc06ce5f0d05f80a2!8m2!3d43.654877!4d-79.4208934!16s%2Fg%2F1v8y4nl_!19sChIJL8VaIfc0K4gRooBf0PDlbMA?authuser=0&hl=en&rclk=1>Regina Pizzeria & Trattoria (4.3)</a></div>`)[0];
+                popup_0891f5b1070eb7b753a0652cbb93f47f.setContent(html_35882f2a36644d90927de0417ab5ece5);
+            
+        
+
+        marker_a5dbdb4f69fffbae5c64417365304f96.bindPopup(popup_0891f5b1070eb7b753a0652cbb93f47f)
+        ;
+
+        
+    
+    
+            marker_a5dbdb4f69fffbae5c64417365304f96.bindTooltip(
+                `<div>
+                     782 College St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0dd6edda9953b51214b549d8c58aaf0 = L.marker(
+                [43.6440861, -79.4057642],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_98e95568a1e1a7840e831bfb03dd52eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b0dd6edda9953b51214b549d8c58aaf0.setIcon(icon_98e95568a1e1a7840e831bfb03dd52eb);
+        
+    
+        var popup_0ba499c4845540dc7918bc50dd65f582 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c90b355d0e4ffd87ef24a8bc8e6d7b46 = $(`<div id="html_c90b355d0e4ffd87ef24a8bc8e6d7b46" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Beast+Pizza/data=!4m7!3m6!1s0x882b35ea2f8f9f9d:0x280b7d5955d784aa!8m2!3d43.6440861!4d-79.4057642!16s%2Fg%2F11rmrf1vjn!19sChIJnZ-PL-o1K4gRqoTXVVl9Cyg?authuser=0&hl=en&rclk=1>Beast Pizza (4.4)</a></div>`)[0];
+                popup_0ba499c4845540dc7918bc50dd65f582.setContent(html_c90b355d0e4ffd87ef24a8bc8e6d7b46);
+            
+        
+
+        marker_b0dd6edda9953b51214b549d8c58aaf0.bindPopup(popup_0ba499c4845540dc7918bc50dd65f582)
+        ;
+
+        
+    
+    
+            marker_b0dd6edda9953b51214b549d8c58aaf0.bindTooltip(
+                `<div>
+                     96 Tecumseth St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc289ee0e6c16b7ddb29259dbba5583b = L.marker(
+                [43.6670117, -79.3812744],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_da859f0eca2b1d021d3988bf31dfce51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_cc289ee0e6c16b7ddb29259dbba5583b.setIcon(icon_da859f0eca2b1d021d3988bf31dfce51);
+        
+    
+        var popup_a053f879e3c43f427c5dfbb64e6be8f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7681db2d998684643dfc04ebd0d1dc2d = $(`<div id="html_7681db2d998684643dfc04ebd0d1dc2d" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/BIG+3+Detroit+Style+PIZZA/data=!4m7!3m6!1s0x882b3563dfcb41e9:0xc2f4cfa926c06915!8m2!3d43.6670117!4d-79.3812744!16s%2Fg%2F11rsys1jvr!19sChIJ6UHL32M1K4gRFWnAJqnP9MI?authuser=0&hl=en&rclk=1>BIG 3 Detroit Style PIZZA (4.2)</a></div>`)[0];
+                popup_a053f879e3c43f427c5dfbb64e6be8f9.setContent(html_7681db2d998684643dfc04ebd0d1dc2d);
+            
+        
+
+        marker_cc289ee0e6c16b7ddb29259dbba5583b.bindPopup(popup_a053f879e3c43f427c5dfbb64e6be8f9)
+        ;
+
+        
+    
+    
+            marker_cc289ee0e6c16b7ddb29259dbba5583b.bindTooltip(
+                `<div>
+                     555 Church St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6341052d8e7ef0f151f881578e9f2ff1 = L.marker(
+                [43.6396779, -79.4213065],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_fb26e5a5e5bd42128a08f552130cca08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6341052d8e7ef0f151f881578e9f2ff1.setIcon(icon_fb26e5a5e5bd42128a08f552130cca08);
+        
+    
+        var popup_11ae785fb8ccc0e3987c8fab89dcc03d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c4d17c35c03d2f1d639d956e2880716f = $(`<div id="html_c4d17c35c03d2f1d639d956e2880716f" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/8Mile+Detroit+Style+Pizza/data=!4m7!3m6!1s0x882b3522a23a80c9:0xcf39af46a6c05948!8m2!3d43.6396779!4d-79.4213065!16s%2Fg%2F11nx4px4vv!19sChIJyYA6oiI1K4gRSFnApkavOc8?authuser=0&hl=en&rclk=1>8Mile Detroit Style Pizza (4.6)</a></div>`)[0];
+                popup_11ae785fb8ccc0e3987c8fab89dcc03d.setContent(html_c4d17c35c03d2f1d639d956e2880716f);
+            
+        
+
+        marker_6341052d8e7ef0f151f881578e9f2ff1.bindPopup(popup_11ae785fb8ccc0e3987c8fab89dcc03d)
+        ;
+
+        
+    
+    
+            marker_6341052d8e7ef0f151f881578e9f2ff1.bindTooltip(
+                `<div>
+                     122 Atlantic Ave
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae6db8e1a43ff580c97311551d94ceff = L.marker(
+                [43.644835, -79.3640087],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_183d2b74854f6b3bd8cc6453e7460776 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ae6db8e1a43ff580c97311551d94ceff.setIcon(icon_183d2b74854f6b3bd8cc6453e7460776);
+        
+    
+        var popup_7407a6633766ff638ed80dd416fc3968 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5623e3225a725ec576f274661dbc2cf7 = $(`<div id="html_5623e3225a725ec576f274661dbc2cf7" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Nforno+Pizza/data=!4m7!3m6!1s0x882b39798a1f494b:0x9905f3b09e240d8f!8m2!3d43.644835!4d-79.3640087!16s%2Fg%2F11g0ttl9g1!19sChIJS0kfink5K4gRjw0knrDzBZk?authuser=0&hl=en&rclk=1>Nforno Pizza (4.7)</a></div>`)[0];
+                popup_7407a6633766ff638ed80dd416fc3968.setContent(html_5623e3225a725ec576f274661dbc2cf7);
+            
+        
+
+        marker_ae6db8e1a43ff580c97311551d94ceff.bindPopup(popup_7407a6633766ff638ed80dd416fc3968)
+        ;
+
+        
+    
+    
+            marker_ae6db8e1a43ff580c97311551d94ceff.bindTooltip(
+                `<div>
+                     59 Merchants' Wharf Unit G
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95731444e1c6b3a3312160ef5fb05347 = L.marker(
+                [43.6775805, -79.4459118],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_15fa00aa99ba35a3d0cabd1e4a34b8b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_95731444e1c6b3a3312160ef5fb05347.setIcon(icon_15fa00aa99ba35a3d0cabd1e4a34b8b2);
+        
+    
+        var popup_799b317d8fe85b490022e74d6c86cc85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb457a134348b6ef64d7c4a6bfdccc78 = $(`<div id="html_cb457a134348b6ef64d7c4a6bfdccc78" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/FBI+Pizza/data=!4m7!3m6!1s0x882b35f4788d8bb1:0x8ddcadd299344121!8m2!3d43.6775805!4d-79.4459118!16s%2Fg%2F11px8ggn1d!19sChIJsYuNePQ1K4gRIUE0mdKt3I0?authuser=0&hl=en&rclk=1>FBI Pizza (4.4)</a></div>`)[0];
+                popup_799b317d8fe85b490022e74d6c86cc85.setContent(html_cb457a134348b6ef64d7c4a6bfdccc78);
+            
+        
+
+        marker_95731444e1c6b3a3312160ef5fb05347.bindPopup(popup_799b317d8fe85b490022e74d6c86cc85)
+        ;
+
+        
+    
+    
+            marker_95731444e1c6b3a3312160ef5fb05347.bindTooltip(
+                `<div>
+                     1248 St Clair Ave W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_69c097138548467f8ee245f7d8197e24 = L.marker(
+                [43.6819654, -79.4685232],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_0ebb31e912fadda38345295451916ef5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_69c097138548467f8ee245f7d8197e24.setIcon(icon_0ebb31e912fadda38345295451916ef5);
+        
+    
+        var popup_34634fc66187927fd2493a20e88e8338 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ee74e696925dbe393d13c7ee4bfe901 = $(`<div id="html_3ee74e696925dbe393d13c7ee4bfe901" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/North+of+Brooklyn+Pizzeria/data=!4m7!3m6!1s0x882b3556a7664e51:0x388ea3004c7ab187!8m2!3d43.6819654!4d-79.4685232!16s%2Fg%2F11f6lkc00k!19sChIJUU5mp1Y1K4gRh7F6TACjjjg?authuser=0&hl=en&rclk=1>North of Brooklyn Pizzeria (4.3)</a></div>`)[0];
+                popup_34634fc66187927fd2493a20e88e8338.setContent(html_3ee74e696925dbe393d13c7ee4bfe901);
+            
+        
+
+        marker_69c097138548467f8ee245f7d8197e24.bindPopup(popup_34634fc66187927fd2493a20e88e8338)
+        ;
+
+        
+    
+    
+            marker_69c097138548467f8ee245f7d8197e24.bindTooltip(
+                `<div>
+                     511 Rogers Rd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a00738c536e08f21c7bcd0059134a52 = L.marker(
+                [43.6618532, -79.4271341],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_49416ef988ec2aca9949e9ad757970a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4a00738c536e08f21c7bcd0059134a52.setIcon(icon_49416ef988ec2aca9949e9ad757970a6);
+        
+    
+        var popup_3ab32229c14cf28f8a0a7f5398116df9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad2acafbbf2d93df81cc5c4d9cb48696 = $(`<div id="html_ad2acafbbf2d93df81cc5c4d9cb48696" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Pizza+Hut+Toronto/data=!4m7!3m6!1s0x882b35f66f2da2c9:0x71e45b5be405030c!8m2!3d43.6618532!4d-79.4271341!16s%2Fg%2F11f611hrzz!19sChIJyaItb_Y1K4gRDAMF5Ftb5HE?authuser=0&hl=en&rclk=1>Pizza Hut Toronto (4.1)</a></div>`)[0];
+                popup_3ab32229c14cf28f8a0a7f5398116df9.setContent(html_ad2acafbbf2d93df81cc5c4d9cb48696);
+            
+        
+
+        marker_4a00738c536e08f21c7bcd0059134a52.bindPopup(popup_3ab32229c14cf28f8a0a7f5398116df9)
+        ;
+
+        
+    
+    
+            marker_4a00738c536e08f21c7bcd0059134a52.bindTooltip(
+                `<div>
+                     922 Bloor St W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_596122e38e55edb8fa104d7b7f06717e = L.marker(
+                [43.6505405, -79.4797828],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_37b8be230c2ef5e894c492734974fbea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_596122e38e55edb8fa104d7b7f06717e.setIcon(icon_37b8be230c2ef5e894c492734974fbea);
+        
+    
+        var popup_8c7d760e7b0016c4be161cbedc201625 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a94ca8317cce04ffbf52a9c75a27142 = $(`<div id="html_0a94ca8317cce04ffbf52a9c75a27142" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/GATTO+Wood+Oven+Pizza/data=!4m7!3m6!1s0x882b372a1b34e545:0xb19d2e7ab39e5687!8m2!3d43.6505405!4d-79.4797828!16s%2Fg%2F11fhyzqgyj!19sChIJReU0Gyo3K4gRh1aes3ounbE?authuser=0&hl=en&rclk=1>GATTO Wood Oven Pizza (4.5)</a></div>`)[0];
+                popup_8c7d760e7b0016c4be161cbedc201625.setContent(html_0a94ca8317cce04ffbf52a9c75a27142);
+            
+        
+
+        marker_596122e38e55edb8fa104d7b7f06717e.bindPopup(popup_8c7d760e7b0016c4be161cbedc201625)
+        ;
+
+        
+    
+    
+            marker_596122e38e55edb8fa104d7b7f06717e.bindTooltip(
+                `<div>
+                     2312 Bloor St W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_79682ee31946b2b222ee3c930a92199c = L.marker(
+                [43.669437, -79.4130323],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_5866fbfc11b0066391d70639f3bb591f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_79682ee31946b2b222ee3c930a92199c.setIcon(icon_5866fbfc11b0066391d70639f3bb591f);
+        
+    
+        var popup_9175df72c322a61ced1f1347aa8e8052 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0160af63b746a75c3b4bed0723c78607 = $(`<div id="html_0160af63b746a75c3b4bed0723c78607" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Napoli+Centrale/data=!4m7!3m6!1s0x882b3490393609d9:0xf192451d6a79d5b3!8m2!3d43.669437!4d-79.4130323!16s%2Fg%2F11ckqr9w8q!19sChIJ2Qk2OZA0K4gRs9V5ah1FkvE?authuser=0&hl=en&rclk=1>Napoli Centrale (4.6)</a></div>`)[0];
+                popup_9175df72c322a61ced1f1347aa8e8052.setContent(html_0160af63b746a75c3b4bed0723c78607);
+            
+        
+
+        marker_79682ee31946b2b222ee3c930a92199c.bindPopup(popup_9175df72c322a61ced1f1347aa8e8052)
+        ;
+
+        
+    
+    
+            marker_79682ee31946b2b222ee3c930a92199c.bindTooltip(
+                `<div>
+                     964 Bathurst St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_531e9eb7acbd1c34dc2faecba7512180 = L.marker(
+                [43.6654154, -79.4732118],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_5957c69af78b1e5079bd35c7de27134e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_531e9eb7acbd1c34dc2faecba7512180.setIcon(icon_5957c69af78b1e5079bd35c7de27134e);
+        
+    
+        var popup_59c3b374421da35c27479d274c8a2fb3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93fde95ba428fa351ef6d2dd4b87a69d = $(`<div id="html_93fde95ba428fa351ef6d2dd4b87a69d" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Burattino+Brick+Oven+Pizza/data=!4m7!3m6!1s0x882b37eca4b96267:0x2db455b24190e1d8!8m2!3d43.6654154!4d-79.4732118!16s%2Fg%2F11ngkn_r3n!19sChIJZ2K5pOw3K4gR2OGQQbJVtC0?authuser=0&hl=en&rclk=1>Burattino Brick Oven Pizza (4.3)</a></div>`)[0];
+                popup_59c3b374421da35c27479d274c8a2fb3.setContent(html_93fde95ba428fa351ef6d2dd4b87a69d);
+            
+        
+
+        marker_531e9eb7acbd1c34dc2faecba7512180.bindPopup(popup_59c3b374421da35c27479d274c8a2fb3)
+        ;
+
+        
+    
+    
+            marker_531e9eb7acbd1c34dc2faecba7512180.bindTooltip(
+                `<div>
+                     3109 Dundas St W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_27d784bd09a121fc456b960ed6685ef8 = L.marker(
+                [43.6643882, -79.3801753],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_73172a80f918656d90ab1869fb6ef872 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_27d784bd09a121fc456b960ed6685ef8.setIcon(icon_73172a80f918656d90ab1869fb6ef872);
+        
+    
+        var popup_cb3924e81374ca6dbb3e2c95ee47e6df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1911a92ba1b175e7cbcfb8a3c9121d32 = $(`<div id="html_1911a92ba1b175e7cbcfb8a3c9121d32" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/North+of+Brooklyn+Pizzeria/data=!4m7!3m6!1s0x882b34b34aaea229:0xccd4ec7a69aee207!8m2!3d43.6643882!4d-79.3801753!16s%2Fg%2F1q5bm3g51!19sChIJKaKuSrM0K4gRB-KuaXrs1Mw?authuser=0&hl=en&rclk=1>North of Brooklyn Pizzeria (4.3)</a></div>`)[0];
+                popup_cb3924e81374ca6dbb3e2c95ee47e6df.setContent(html_1911a92ba1b175e7cbcfb8a3c9121d32);
+            
+        
+
+        marker_27d784bd09a121fc456b960ed6685ef8.bindPopup(popup_cb3924e81374ca6dbb3e2c95ee47e6df)
+        ;
+
+        
+    
+    
+            marker_27d784bd09a121fc456b960ed6685ef8.bindTooltip(
+                `<div>
+                     469 Church St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1d253e54ca0d0ecf0b74eab9f3e0c3c = L.marker(
+                [43.6500833, -79.3758766],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_50896426536ecd63eea7e1b3cc9aa234 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a1d253e54ca0d0ecf0b74eab9f3e0c3c.setIcon(icon_50896426536ecd63eea7e1b3cc9aa234);
+        
+    
+        var popup_70a41cc36e2861977ebfea329053f979 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20cb84b8e02e04adda09ddf2c67ea19a = $(`<div id="html_20cb84b8e02e04adda09ddf2c67ea19a" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Pizzaiolo/data=!4m7!3m6!1s0x89d4cb321450d6ad:0x8b12489eedd03ad1!8m2!3d43.6500833!4d-79.3758766!16s%2Fg%2F1tfsnzw5!19sChIJrdZQFDLL1IkR0TrQ7Z5IEos?authuser=0&hl=en&rclk=1>Pizzaiolo (4.0)</a></div>`)[0];
+                popup_70a41cc36e2861977ebfea329053f979.setContent(html_20cb84b8e02e04adda09ddf2c67ea19a);
+            
+        
+
+        marker_a1d253e54ca0d0ecf0b74eab9f3e0c3c.bindPopup(popup_70a41cc36e2861977ebfea329053f979)
+        ;
+
+        
+    
+    
+            marker_a1d253e54ca0d0ecf0b74eab9f3e0c3c.bindTooltip(
+                `<div>
+                     1 Toronto St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c7ae72e9c26b0406e1d6ccad6b44e98 = L.marker(
+                [43.6450321, -79.3687987],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_404aca65b01c747bbe443122b8e0bd31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0c7ae72e9c26b0406e1d6ccad6b44e98.setIcon(icon_404aca65b01c747bbe443122b8e0bd31);
+        
+    
+        var popup_996fe62b15c3615af84cddbe57a4a701 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22d5889980a6026ef7313f922c1cf1cd = $(`<div id="html_22d5889980a6026ef7313f922c1cf1cd" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Pi+Co+Pizza+Bar/data=!4m7!3m6!1s0x89d4cbf8f2569169:0x3fbfabfe6e2a95f2!8m2!3d43.6450321!4d-79.3687987!16s%2Fg%2F11q1p40ntr!19sChIJaZFW8vjL1IkR8pUqbv6rvz8?authuser=0&hl=en&rclk=1>Pi Co Pizza Bar (4.8)</a></div>`)[0];
+                popup_996fe62b15c3615af84cddbe57a4a701.setContent(html_22d5889980a6026ef7313f922c1cf1cd);
+            
+        
+
+        marker_0c7ae72e9c26b0406e1d6ccad6b44e98.bindPopup(popup_996fe62b15c3615af84cddbe57a4a701)
+        ;
+
+        
+    
+    
+            marker_0c7ae72e9c26b0406e1d6ccad6b44e98.bindTooltip(
+                `<div>
+                     16 Richardson St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c139e37b697c9117c5a7bc166ed0c496 = L.marker(
+                [43.7081614, -79.3924628],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_abddf20f2b73e940a31f8eac31f1eb73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c139e37b697c9117c5a7bc166ed0c496.setIcon(icon_abddf20f2b73e940a31f8eac31f1eb73);
+        
+    
+        var popup_751dc2d94d85ffcf2eb946dad5952035 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7dfb2a3097bc4a7b73df96c6253a877e = $(`<div id="html_7dfb2a3097bc4a7b73df96c6253a877e" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Panago+Pizza/data=!4m7!3m6!1s0x882b32f12e189eed:0xbfcc540ebe63e4d7!8m2!3d43.7081614!4d-79.3924628!16s%2Fg%2F1tm2b987!19sChIJ7Z4YLvEyK4gR1-Rjvg5UzL8?authuser=0&hl=en&rclk=1>Panago Pizza (4.4)</a></div>`)[0];
+                popup_751dc2d94d85ffcf2eb946dad5952035.setContent(html_7dfb2a3097bc4a7b73df96c6253a877e);
+            
+        
+
+        marker_c139e37b697c9117c5a7bc166ed0c496.bindPopup(popup_751dc2d94d85ffcf2eb946dad5952035)
+        ;
+
+        
+    
+    
+            marker_c139e37b697c9117c5a7bc166ed0c496.bindTooltip(
+                `<div>
+                     188 Eglinton Ave E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_93e73afe8e07953794c18777cf048916 = L.marker(
+                [43.6440864, -79.4009307],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_b97680c09faae133707b7a87a75fd922 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_93e73afe8e07953794c18777cf048916.setIcon(icon_b97680c09faae133707b7a87a75fd922);
+        
+    
+        var popup_571a8b39875d2df10824a7f4e2f840b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d4244df6a3cd43d43767a5e3df05092 = $(`<div id="html_3d4244df6a3cd43d43767a5e3df05092" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Pizzaiolo/data=!4m7!3m6!1s0x882b352366b3d667:0x5d8a20da8c151145!8m2!3d43.6440864!4d-79.4009307!16s%2Fg%2F1hm6c330h!19sChIJZ9azZiM1K4gRRREVjNogil0?authuser=0&hl=en&rclk=1>Pizzaiolo (4.0)</a></div>`)[0];
+                popup_571a8b39875d2df10824a7f4e2f840b5.setContent(html_3d4244df6a3cd43d43767a5e3df05092);
+            
+        
+
+        marker_93e73afe8e07953794c18777cf048916.bindPopup(popup_571a8b39875d2df10824a7f4e2f840b5)
+        ;
+
+        
+    
+    
+            marker_93e73afe8e07953794c18777cf048916.bindTooltip(
+                `<div>
+                     615 King St W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4dead8a526cee1f6a7da72303201079d = L.marker(
+                [43.654635, -79.4009647],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_abd251e8edb035c04e4ab58b98a8bd0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4dead8a526cee1f6a7da72303201079d.setIcon(icon_abd251e8edb035c04e4ab58b98a8bd0a);
+        
+    
+        var popup_a1fb3721b08c87c7c726293a35163b91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd5045dc57152b69a3349f01454c1041 = $(`<div id="html_fd5045dc57152b69a3349f01454c1041" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Mare+Pizzeria/data=!4m7!3m6!1s0x882b34c2396e5783:0x22823f23bfbf7b66!8m2!3d43.654635!4d-79.4009647!16s%2Fg%2F11c44n0pts!19sChIJg1duOcI0K4gRZnu_vyM_giI?authuser=0&hl=en&rclk=1>Mare Pizzeria (4.2)</a></div>`)[0];
+                popup_a1fb3721b08c87c7c726293a35163b91.setContent(html_fd5045dc57152b69a3349f01454c1041);
+            
+        
+
+        marker_4dead8a526cee1f6a7da72303201079d.bindPopup(popup_a1fb3721b08c87c7c726293a35163b91)
+        ;
+
+        
+    
+    
+            marker_4dead8a526cee1f6a7da72303201079d.bindTooltip(
+                `<div>
+                     185 Baldwin St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4df769f9f0312f2e9982bd1be9a53d31 = L.marker(
+                [43.6560587, -79.3924699],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_6298ddf2f592fca9838d7444829ea43a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4df769f9f0312f2e9982bd1be9a53d31.setIcon(icon_6298ddf2f592fca9838d7444829ea43a);
+        
+    
+        var popup_bddcee45d8427d711840d380ac5fd639 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16a55a1fd64ade87a218d9eeb4208c2f = $(`<div id="html_16a55a1fd64ade87a218d9eeb4208c2f" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Three+Kingdoms+Pizza+%E5%9B%B4%E7%82%89%E4%B8%89%E5%9B%BD%E9%94%85%E7%9B%94/data=!4m7!3m6!1s0x882b359a17c53779:0x5268e59e5ce39028!8m2!3d43.6560587!4d-79.3924699!16s%2Fg%2F11rn04xkx8!19sChIJeTfFF5o1K4gRKJDjXJ7laFI?authuser=0&hl=en&rclk=1>Three Kingdoms Pizza 围炉三国锅盔 (4.6)</a></div>`)[0];
+                popup_bddcee45d8427d711840d380ac5fd639.setContent(html_16a55a1fd64ade87a218d9eeb4208c2f);
+            
+        
+
+        marker_4df769f9f0312f2e9982bd1be9a53d31.bindPopup(popup_bddcee45d8427d711840d380ac5fd639)
+        ;
+
+        
+    
+    
+            marker_4df769f9f0312f2e9982bd1be9a53d31.bindTooltip(
+                `<div>
+                     5 Baldwin St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3c366afece1e27113781c69494695ff = L.marker(
+                [43.6433462, -79.3758665],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_320a88cc57e543c1dcbf8d4305211e1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b3c366afece1e27113781c69494695ff.setIcon(icon_320a88cc57e543c1dcbf8d4305211e1a);
+        
+    
+        var popup_fd4961017eae43ec2de1b1ddd26bf8cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0552a2f7a3db96dede071165201b323d = $(`<div id="html_0552a2f7a3db96dede071165201b323d" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Mister+Pizza/data=!4m7!3m6!1s0x89d4cb2bf2ff1bed:0x814b1514be62cf96!8m2!3d43.6433462!4d-79.3758665!16s%2Fg%2F1pzqryp9t!19sChIJ7Rv_8ivL1IkRls9ivhQVS4E?authuser=0&hl=en&rclk=1>Mister Pizza (4.4)</a></div>`)[0];
+                popup_fd4961017eae43ec2de1b1ddd26bf8cc.setContent(html_0552a2f7a3db96dede071165201b323d);
+            
+        
+
+        marker_b3c366afece1e27113781c69494695ff.bindPopup(popup_fd4961017eae43ec2de1b1ddd26bf8cc)
+        ;
+
+        
+    
+    
+            marker_b3c366afece1e27113781c69494695ff.bindTooltip(
+                `<div>
+                     16 Yonge St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2af10319d35aa06444d35cbf3e8cda66 = L.marker(
+                [43.7137133, -79.3653981],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_9f3602a0b1c4681937cbc986f4c25dcd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2af10319d35aa06444d35cbf3e8cda66.setIcon(icon_9f3602a0b1c4681937cbc986f4c25dcd);
+        
+    
+        var popup_0cf4b02df21b9205ce007ce297ab1aaa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7db89c050e1f36dc4800886523f518e = $(`<div id="html_f7db89c050e1f36dc4800886523f518e" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Conspiracy+Pizza/data=!4m7!3m6!1s0x89d4cd2d0b29656b:0xc30573b52f1fb641!8m2!3d43.7137133!4d-79.3653981!16s%2Fg%2F11js3bbq01!19sChIJa2UpCy3N1IkRQbYfL7VzBcM?authuser=0&hl=en&rclk=1>Conspiracy Pizza (4.5)</a></div>`)[0];
+                popup_0cf4b02df21b9205ce007ce297ab1aaa.setContent(html_f7db89c050e1f36dc4800886523f518e);
+            
+        
+
+        marker_2af10319d35aa06444d35cbf3e8cda66.bindPopup(popup_0cf4b02df21b9205ce007ce297ab1aaa)
+        ;
+
+        
+    
+    
+            marker_2af10319d35aa06444d35cbf3e8cda66.bindTooltip(
+                `<div>
+                     858 Eglinton Ave E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d36e3e952d9ea8926a837acc21175620 = L.marker(
+                [43.6593968, -79.3818779],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_e7d1362582808dca8fb812fe0c5a97b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d36e3e952d9ea8926a837acc21175620.setIcon(icon_e7d1362582808dca8fb812fe0c5a97b4);
+        
+    
+        var popup_20f2bd459901ad7c169a6901bb77f0db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d076e7a373e838fd8e6f837cdf02cedb = $(`<div id="html_d076e7a373e838fd8e6f837cdf02cedb" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Boston+Pizza/data=!4m7!3m6!1s0x882b34b569b041b9:0x192a8fc28ff3b242!8m2!3d43.6593968!4d-79.3818779!16s%2Fg%2F11fylnjbzl!19sChIJuUGwabU0K4gRQrLzj8KPKhk?authuser=0&hl=en&rclk=1>Boston Pizza (4.1)</a></div>`)[0];
+                popup_20f2bd459901ad7c169a6901bb77f0db.setContent(html_d076e7a373e838fd8e6f837cdf02cedb);
+            
+        
+
+        marker_d36e3e952d9ea8926a837acc21175620.bindPopup(popup_20f2bd459901ad7c169a6901bb77f0db)
+        ;
+
+        
+    
+    
+            marker_d36e3e952d9ea8926a837acc21175620.bindTooltip(
+                `<div>
+                     401 Yonge St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd7007661c18adf08de9e2de7c821103 = L.marker(
+                [43.6499295, -79.3786081],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_b9c21c4bb46ca3802baef3fc6fd1b649 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_cd7007661c18adf08de9e2de7c821103.setIcon(icon_b9c21c4bb46ca3802baef3fc6fd1b649);
+        
+    
+        var popup_516ca53ba27069f286bcc4e3363e7790 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a7f2aeea25902cfd392a1211d6a197a8 = $(`<div id="html_a7f2aeea25902cfd392a1211d6a197a8" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Pizzaiolo/data=!4m7!3m6!1s0x89d4cb328f8d3699:0x343337d2651d3f86!8m2!3d43.6499295!4d-79.3786081!16s%2Fg%2F1hm4zqj1h!19sChIJmTaNjzLL1IkRhj8dZdI3MzQ?authuser=0&hl=en&rclk=1>Pizzaiolo (3.9)</a></div>`)[0];
+                popup_516ca53ba27069f286bcc4e3363e7790.setContent(html_a7f2aeea25902cfd392a1211d6a197a8);
+            
+        
+
+        marker_cd7007661c18adf08de9e2de7c821103.bindPopup(popup_516ca53ba27069f286bcc4e3363e7790)
+        ;
+
+        
+    
+    
+            marker_cd7007661c18adf08de9e2de7c821103.bindTooltip(
+                `<div>
+                     104 Yonge St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_659c24cd40f1bc1b07e1ddff461144b8 = L.marker(
+                [43.6654285, -79.3873493],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_1ef6f499e66b8fb08b57a8a1a02eb4ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_659c24cd40f1bc1b07e1ddff461144b8.setIcon(icon_1ef6f499e66b8fb08b57a8a1a02eb4ee);
+        
+    
+        var popup_5eccddf2905bdafd71940c06ba56ba1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62c6708e609de0b37f94fea6f1c7b6e4 = $(`<div id="html_62c6708e609de0b37f94fea6f1c7b6e4" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Pizza+Nova/data=!4m7!3m6!1s0x882b34b11345cd63:0xb4913b1eac302c76!8m2!3d43.6654285!4d-79.3873493!16s%2Fg%2F1tqtyhtv!19sChIJY81FE7E0K4gRdiwwrB47kbQ?authuser=0&hl=en&rclk=1>Pizza Nova (4.1)</a></div>`)[0];
+                popup_5eccddf2905bdafd71940c06ba56ba1e.setContent(html_62c6708e609de0b37f94fea6f1c7b6e4);
+            
+        
+
+        marker_659c24cd40f1bc1b07e1ddff461144b8.bindPopup(popup_5eccddf2905bdafd71940c06ba56ba1e)
+        ;
+
+        
+    
+    
+            marker_659c24cd40f1bc1b07e1ddff461144b8.bindTooltip(
+                `<div>
+                     997 Bay St.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e21a6e40701eaa76882a3c76b04f3a9 = L.marker(
+                [43.6478391, -79.3857627],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_db87559d947c58d52c995ff1aad27dbd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5e21a6e40701eaa76882a3c76b04f3a9.setIcon(icon_db87559d947c58d52c995ff1aad27dbd);
+        
+    
+        var popup_3d2139316a34efdb413622e36504e059 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad430ae1ebec58877cdedff279187412 = $(`<div id="html_ad430ae1ebec58877cdedff279187412" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/ZeroZero+PIZZA%2BCOFFEE%2BBAR%2BSANDWICH/data=!4m7!3m6!1s0x882b3520cf8e37af:0x61538a0e594ca8e3!8m2!3d43.6478391!4d-79.3857627!16s%2Fg%2F11ghtfct2v!19sChIJrzeOzyA1K4gR46hMWQ6KU2E?authuser=0&hl=en&rclk=1>ZeroZero PIZZA+COFFEE+BAR+SANDWICH (4.3)</a></div>`)[0];
+                popup_3d2139316a34efdb413622e36504e059.setContent(html_ad430ae1ebec58877cdedff279187412);
+            
+        
+
+        marker_5e21a6e40701eaa76882a3c76b04f3a9.bindPopup(popup_3d2139316a34efdb413622e36504e059)
+        ;
+
+        
+    
+    
+            marker_5e21a6e40701eaa76882a3c76b04f3a9.bindTooltip(
+                `<div>
+                     Entrance from, 200 King Street West OR 120 PEARL ST, Simcoe St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_500f93db050531ca516dafdfbb1a734d = L.marker(
+                [43.6659402, -79.4081507],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_115078109fadfb50aa4a4b9c816d499a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_500f93db050531ca516dafdfbb1a734d.setIcon(icon_115078109fadfb50aa4a4b9c816d499a);
+        
+    
+        var popup_b55263c0d0908a01c502ba549dee3151 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eee10d3c43ce95e6ee1e887acfff3bd4 = $(`<div id="html_eee10d3c43ce95e6ee1e887acfff3bd4" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Pizzaiolo/data=!4m7!3m6!1s0x882b35261caee4d5:0xec61ad85c6b4225d!8m2!3d43.6659402!4d-79.4081507!16s%2Fg%2F11l_hqthbq!19sChIJ1eSuHCY1K4gRXSK0xoWtYew?authuser=0&hl=en&rclk=1>Pizzaiolo (4.2)</a></div>`)[0];
+                popup_b55263c0d0908a01c502ba549dee3151.setContent(html_eee10d3c43ce95e6ee1e887acfff3bd4);
+            
+        
+
+        marker_500f93db050531ca516dafdfbb1a734d.bindPopup(popup_b55263c0d0908a01c502ba549dee3151)
+        ;
+
+        
+    
+    
+            marker_500f93db050531ca516dafdfbb1a734d.bindTooltip(
+                `<div>
+                     416 Bloor St W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_839db95dc8e7b6847801081709bdf946 = L.marker(
+                [43.644834, -79.385439],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_25dbd78605b6763b4f541b8d6d2a5fbb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_839db95dc8e7b6847801081709bdf946.setIcon(icon_25dbd78605b6763b4f541b8d6d2a5fbb);
+        
+    
+        var popup_fbf65df5c32e7de9047210b05405a256 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1773fda143d9662f02a5f221bc10fba7 = $(`<div id="html_1773fda143d9662f02a5f221bc10fba7" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Scaddabush+Italian+Kitchen+%26+Bar+Front+Street/data=!4m7!3m6!1s0x882b34d154e314f5:0xeadf3928f3047bdb!8m2!3d43.644834!4d-79.385439!16s%2Fg%2F11c2009cnx!19sChIJ9RTjVNE0K4gR23sE8yg53-o?authuser=0&hl=en&rclk=1>Scaddabush Italian Kitchen & Bar Front Street (4.3)</a></div>`)[0];
+                popup_fbf65df5c32e7de9047210b05405a256.setContent(html_1773fda143d9662f02a5f221bc10fba7);
+            
+        
+
+        marker_839db95dc8e7b6847801081709bdf946.bindPopup(popup_fbf65df5c32e7de9047210b05405a256)
+        ;
+
+        
+    
+    
+            marker_839db95dc8e7b6847801081709bdf946.bindTooltip(
+                `<div>
+                     200 Front St W Unit #G001
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_588395e51e1b005bc37d3cb946527bbf = L.marker(
+                [43.661937, -79.383074],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_b17e96745dab8c49b9905d9c114b5543 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_588395e51e1b005bc37d3cb946527bbf.setIcon(icon_b17e96745dab8c49b9905d9c114b5543);
+        
+    
+        var popup_fc6122c95477a5d5b9037aaf52012bc5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0fcf5a0c6af7e4fb2b3e5e04c8659629 = $(`<div id="html_0fcf5a0c6af7e4fb2b3e5e04c8659629" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Pizza+Pizza/data=!4m7!3m6!1s0x882b34b4f6076a1f:0x2c897fcd246be2dd!8m2!3d43.661937!4d-79.383074!16s%2Fg%2F1tltm_lw!19sChIJH2oH9rQ0K4gR3eJrJM1_iSw?authuser=0&hl=en&rclk=1>Pizza Pizza (3.4)</a></div>`)[0];
+                popup_fc6122c95477a5d5b9037aaf52012bc5.setContent(html_0fcf5a0c6af7e4fb2b3e5e04c8659629);
+            
+        
+
+        marker_588395e51e1b005bc37d3cb946527bbf.bindPopup(popup_fc6122c95477a5d5b9037aaf52012bc5)
+        ;
+
+        
+    
+    
+            marker_588395e51e1b005bc37d3cb946527bbf.bindTooltip(
+                `<div>
+                     471 Yonge St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3497a4ca143ccdf789c8aab2595a8a99 = L.marker(
+                [43.649071, -79.484426],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_7b5656e85f112d6ad2682526d5c266f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3497a4ca143ccdf789c8aab2595a8a99.setIcon(icon_7b5656e85f112d6ad2682526d5c266f0);
+        
+    
+        var popup_cd39d30e1c23a289d6f7edb036c8a9eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6075369c474f9ab3ba539374bbe67217 = $(`<div id="html_6075369c474f9ab3ba539374bbe67217" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Pizza+Pizza/data=!4m7!3m6!1s0x882b36882adfc71b:0xb041607288054a87!8m2!3d43.649071!4d-79.484426!16s%2Fg%2F11r9mvbr3!19sChIJG8ffKog2K4gRh0oFiHJgQbA?authuser=0&hl=en&rclk=1>Pizza Pizza (4.7)</a></div>`)[0];
+                popup_cd39d30e1c23a289d6f7edb036c8a9eb.setContent(html_6075369c474f9ab3ba539374bbe67217);
+            
+        
+
+        marker_3497a4ca143ccdf789c8aab2595a8a99.bindPopup(popup_cd39d30e1c23a289d6f7edb036c8a9eb)
+        ;
+
+        
+    
+    
+            marker_3497a4ca143ccdf789c8aab2595a8a99.bindTooltip(
+                `<div>
+                     2449 Bloor St W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f8af2779f5c8155569ed6ff4c63b0111 = L.marker(
+                [43.6616759, -79.4083467],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_7941cbbb50df44cc6ba0f7215c58f49d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f8af2779f5c8155569ed6ff4c63b0111.setIcon(icon_7941cbbb50df44cc6ba0f7215c58f49d);
+        
+    
+        var popup_cc1a4982be94708572adc778de37caa1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70d030363bb67f22de8669d5e9daf45e = $(`<div id="html_70d030363bb67f22de8669d5e9daf45e" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Pizza+Gigi/data=!4m7!3m6!1s0x882b3494a7cd4bf3:0xdca73cbffcf0c89!8m2!3d43.6616759!4d-79.4083467!16s%2Fg%2F1v2jdk09!19sChIJ80vNp5Q0K4gRiQzP_8tzyg0?authuser=0&hl=en&rclk=1>Pizza Gigi (4.2)</a></div>`)[0];
+                popup_cc1a4982be94708572adc778de37caa1.setContent(html_70d030363bb67f22de8669d5e9daf45e);
+            
+        
+
+        marker_f8af2779f5c8155569ed6ff4c63b0111.bindPopup(popup_cc1a4982be94708572adc778de37caa1)
+        ;
+
+        
+    
+    
+            marker_f8af2779f5c8155569ed6ff4c63b0111.bindTooltip(
+                `<div>
+                     189 Harbord St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1daf2823cf15a83550a343bcc8c40376 = L.marker(
+                [43.6461025, -79.4197874],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_6da4ca06c05689ecfe698d346b96ca2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1daf2823cf15a83550a343bcc8c40376.setIcon(icon_6da4ca06c05689ecfe698d346b96ca2d);
+        
+    
+        var popup_1a42876a46f1db6967ba662daf788daa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fffdccc989d0d284ad8dba163cfe2367 = $(`<div id="html_fffdccc989d0d284ad8dba163cfe2367" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Blondies+Pizza/data=!4m7!3m6!1s0x882b358348f0f26f:0x81759dba80061ad7!8m2!3d43.6461025!4d-79.4197874!16s%2Fg%2F11fp3ybqwr!19sChIJb_LwSIM1K4gR1xoGgLqddYE?authuser=0&hl=en&rclk=1>Blondies Pizza (3.9)</a></div>`)[0];
+                popup_1a42876a46f1db6967ba662daf788daa.setContent(html_fffdccc989d0d284ad8dba163cfe2367);
+            
+        
+
+        marker_1daf2823cf15a83550a343bcc8c40376.bindPopup(popup_1a42876a46f1db6967ba662daf788daa)
+        ;
+
+        
+    
+    
+            marker_1daf2823cf15a83550a343bcc8c40376.bindTooltip(
+                `<div>
+                     88 Ossington Ave Unit 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70e530681904ce5acf2571cdfb33077e = L.marker(
+                [43.6602446, -79.3776761],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_6786f3bbca21ec8a103e9c549d9ec516 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_70e530681904ce5acf2571cdfb33077e.setIcon(icon_6786f3bbca21ec8a103e9c549d9ec516);
+        
+    
+        var popup_83a80df4fb2d008c950f2a4869bc43fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbbe0e292083e7393b92bde7e6be316f = $(`<div id="html_dbbe0e292083e7393b92bde7e6be316f" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Bocconcini+Toronto/data=!4m7!3m6!1s0x89d4cb4a5609c557:0x5fdf5b0ec033dc27!8m2!3d43.6602446!4d-79.3776761!16s%2Fg%2F11bwn4h649!19sChIJV8UJVkrL1IkRJ9wzwA5b318?authuser=0&hl=en&rclk=1>Bocconcini Toronto (4.6)</a></div>`)[0];
+                popup_83a80df4fb2d008c950f2a4869bc43fe.setContent(html_dbbe0e292083e7393b92bde7e6be316f);
+            
+        
+
+        marker_70e530681904ce5acf2571cdfb33077e.bindPopup(popup_83a80df4fb2d008c950f2a4869bc43fe)
+        ;
+
+        
+    
+    
+            marker_70e530681904ce5acf2571cdfb33077e.bindTooltip(
+                `<div>
+                     96 Gerrard St E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84a771d08dde9880dc198d43b4a04329 = L.marker(
+                [43.6469223, -79.4060226],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_f98638dd4ef20bae52f26701aee12b55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_84a771d08dde9880dc198d43b4a04329.setIcon(icon_f98638dd4ef20bae52f26701aee12b55);
+        
+    
+        var popup_319481aac38346711036350d9d31333f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4adbc6e7b436e60c6614899de9ae0447 = $(`<div id="html_4adbc6e7b436e60c6614899de9ae0447" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/6ix+Pizzas/data=!4m7!3m6!1s0x882b35fd750adc7f:0x5f7d86b6a74eb1fd!8m2!3d43.6469223!4d-79.4060226!16s%2Fg%2F11rc90bycx!19sChIJf9wKdf01K4gR_bFOp7aGfV8?authuser=0&hl=en&rclk=1>6ix Pizzas (4.4)</a></div>`)[0];
+                popup_319481aac38346711036350d9d31333f.setContent(html_4adbc6e7b436e60c6614899de9ae0447);
+            
+        
+
+        marker_84a771d08dde9880dc198d43b4a04329.bindPopup(popup_319481aac38346711036350d9d31333f)
+        ;
+
+        
+    
+    
+            marker_84a771d08dde9880dc198d43b4a04329.bindTooltip(
+                `<div>
+                     638 Queen St W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1d8ddd6ad7ec917882e6a21f3bf58af2 = L.marker(
+                [43.6647257, -79.4108474],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_532bf2b35a035f1ee3ced0b7dbe81f3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1d8ddd6ad7ec917882e6a21f3bf58af2.setIcon(icon_532bf2b35a035f1ee3ced0b7dbe81f3a);
+        
+    
+        var popup_375683c953dbbcefb57ec2070f05c22b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9ae02e3cdfd5bfc6c0ace07e1e88c8a = $(`<div id="html_f9ae02e3cdfd5bfc6c0ace07e1e88c8a" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Panago+Pizza/data=!4m7!3m6!1s0x882b3493b3fe8455:0xd3cd62b366be8a75!8m2!3d43.6647257!4d-79.4108474!16s%2Fg%2F11b88s8wm3!19sChIJVYT-s5M0K4gRdYq-ZrNizdM?authuser=0&hl=en&rclk=1>Panago Pizza (4.3)</a></div>`)[0];
+                popup_375683c953dbbcefb57ec2070f05c22b.setContent(html_f9ae02e3cdfd5bfc6c0ace07e1e88c8a);
+            
+        
+
+        marker_1d8ddd6ad7ec917882e6a21f3bf58af2.bindPopup(popup_375683c953dbbcefb57ec2070f05c22b)
+        ;
+
+        
+    
+    
+            marker_1d8ddd6ad7ec917882e6a21f3bf58af2.bindTooltip(
+                `<div>
+                     787 Bathurst St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_540198132e212c680bebde688ce630c2 = L.marker(
+                [43.6462904, -79.4092065],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_bfec6c3c6c16cd0dcfa4ec1ee1d07b9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_540198132e212c680bebde688ce630c2.setIcon(icon_bfec6c3c6c16cd0dcfa4ec1ee1d07b9d);
+        
+    
+        var popup_9744e2c5d80618f086225bef41aa12f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f778319939c66d085d9000f3da9192f3 = $(`<div id="html_f778319939c66d085d9000f3da9192f3" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Terroni/data=!4m7!3m6!1s0x882b34e3e569327b:0xa2541d503cdb04d7!8m2!3d43.6462904!4d-79.4092065!16s%2Fg%2F1vcl4d3g!19sChIJezJp5eM0K4gR1wTbPFAdVKI?authuser=0&hl=en&rclk=1>Terroni (4.3)</a></div>`)[0];
+                popup_9744e2c5d80618f086225bef41aa12f5.setContent(html_f778319939c66d085d9000f3da9192f3);
+            
+        
+
+        marker_540198132e212c680bebde688ce630c2.bindPopup(popup_9744e2c5d80618f086225bef41aa12f5)
+        ;
+
+        
+    
+    
+            marker_540198132e212c680bebde688ce630c2.bindTooltip(
+                `<div>
+                     720 Queen St W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce609dad6821a678b78b47114d881258 = L.marker(
+                [43.6493152, -79.3743274],
+                {}
+            ).addTo(feature_group_9cbf59877f99171c8c5f065f7da90c19);
+        
+    
+            var icon_99ef5d881835dd7d9cc9915e47cabc93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "red", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ce609dad6821a678b78b47114d881258.setIcon(icon_99ef5d881835dd7d9cc9915e47cabc93);
+        
+    
+        var popup_50de5dcc6dd596201969b720bdffd39f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd1720307daeae7fcab537678ec2a2ce = $(`<div id="html_cd1720307daeae7fcab537678ec2a2ce" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Pi+Co./data=!4m7!3m6!1s0x89d4cb0a801817f7:0xdc34a39aa4c40753!8m2!3d43.6493152!4d-79.3743274!16s%2Fg%2F11h3m81ycc!19sChIJ9xcYgArL1IkRUwfEpJqjNNw?authuser=0&hl=en&rclk=1>Pi Co. (4.5)</a></div>`)[0];
+                popup_50de5dcc6dd596201969b720bdffd39f.setContent(html_cd1720307daeae7fcab537678ec2a2ce);
+            
+        
+
+        marker_ce609dad6821a678b78b47114d881258.bindPopup(popup_50de5dcc6dd596201969b720bdffd39f)
+        ;
+
+        
+    
+    
+            marker_ce609dad6821a678b78b47114d881258.bindTooltip(
+                `<div>
+                     60 Colborne St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_b10ae9b4be553d68996f57705a29c088 = L.featureGroup(
+                {}
+            ).addTo(map_c05ea6184810cc9f8373fa76e7bf3171);
+        
+    
+            var marker_a4f3f8079ef366e9981429e57ab5b5cd = L.marker(
+                [43.6448924, -79.3829727],
+                {}
+            ).addTo(feature_group_b10ae9b4be553d68996f57705a29c088);
+        
+    
+            var icon_b8ae84fd3eaa223ecc3f992381af9943 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "green", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a4f3f8079ef366e9981429e57ab5b5cd.setIcon(icon_b8ae84fd3eaa223ecc3f992381af9943);
+        
+    
+        var popup_47b63c0c7756b95836eb582d56e73c2e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7bb15d9e47a01385a6a8f6a8e7406aa8 = $(`<div id="html_7bb15d9e47a01385a6a8f6a8e7406aa8" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Chipotle+Mexican+Grill/data=!4m7!3m6!1s0x882b34d382ca8a0f:0x5bb05a5c57104878!8m2!3d43.6448924!4d-79.3829727!16s%2Fg%2F1tcts97j!19sChIJD4rKgtM0K4gReEgQV1xasFs?authuser=0&hl=en&rclk=1>Chipotle Mexican Grill (4.2)</a></div>`)[0];
+                popup_47b63c0c7756b95836eb582d56e73c2e.setContent(html_7bb15d9e47a01385a6a8f6a8e7406aa8);
+            
+        
+
+        marker_a4f3f8079ef366e9981429e57ab5b5cd.bindPopup(popup_47b63c0c7756b95836eb582d56e73c2e)
+        ;
+
+        
+    
+    
+            marker_a4f3f8079ef366e9981429e57ab5b5cd.bindTooltip(
+                `<div>
+                     123 Front St W Unit 103
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_91e2df81ed62f168c856dc578bfb6bbc = L.marker(
+                [43.6568643, -79.3808678],
+                {}
+            ).addTo(feature_group_b10ae9b4be553d68996f57705a29c088);
+        
+    
+            var icon_ec3fb04d1dddf3b0b7895ab31f756d33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "green", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_91e2df81ed62f168c856dc578bfb6bbc.setIcon(icon_ec3fb04d1dddf3b0b7895ab31f756d33);
+        
+    
+        var popup_2efda55b0e32636b203bdea41d54f3c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c2b324c6a73cdca47eb21a575f0e3ca = $(`<div id="html_6c2b324c6a73cdca47eb21a575f0e3ca" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Chipotle+Mexican+Grill/data=!4m7!3m6!1s0x882b34cacfd8f671:0xbb7088a7fb1e8d51!8m2!3d43.6568643!4d-79.3808678!16s%2Fg%2F1w0p67y9!19sChIJcfbYz8o0K4gRUY0e-6eIcLs?authuser=0&hl=en&rclk=1>Chipotle Mexican Grill (4.2)</a></div>`)[0];
+                popup_2efda55b0e32636b203bdea41d54f3c7.setContent(html_6c2b324c6a73cdca47eb21a575f0e3ca);
+            
+        
+
+        marker_91e2df81ed62f168c856dc578bfb6bbc.bindPopup(popup_2efda55b0e32636b203bdea41d54f3c7)
+        ;
+
+        
+    
+    
+            marker_91e2df81ed62f168c856dc578bfb6bbc.bindTooltip(
+                `<div>
+                     323 Yonge St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a8a84c9f795b4d7221fb48802a05c53d = L.marker(
+                [43.6494872, -79.3916476],
+                {}
+            ).addTo(feature_group_b10ae9b4be553d68996f57705a29c088);
+        
+    
+            var icon_c5d3ede80e424549143935c15dfdc5ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "green", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a8a84c9f795b4d7221fb48802a05c53d.setIcon(icon_c5d3ede80e424549143935c15dfdc5ca);
+        
+    
+        var popup_38f984508f97e5abfa11c6146a1a4065 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a366699a601c527eb7ce9ba704d3a02d = $(`<div id="html_a366699a601c527eb7ce9ba704d3a02d" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Chipotle+Mexican+Grill/data=!4m7!3m6!1s0x882b34daa8301e0b:0x5a4a3bc256fe872d!8m2!3d43.6494872!4d-79.3916476!16s%2Fg%2F11dzr1_93x!19sChIJCx4wqNo0K4gRLYf-VsI7Slo?authuser=0&hl=en&rclk=1>Chipotle Mexican Grill (4.2)</a></div>`)[0];
+                popup_38f984508f97e5abfa11c6146a1a4065.setContent(html_a366699a601c527eb7ce9ba704d3a02d);
+            
+        
+
+        marker_a8a84c9f795b4d7221fb48802a05c53d.bindPopup(popup_38f984508f97e5abfa11c6146a1a4065)
+        ;
+
+        
+    
+    
+            marker_a8a84c9f795b4d7221fb48802a05c53d.bindTooltip(
+                `<div>
+                     319 Queen St W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_155f1688065c54f0970ebbca70b40a8b = L.marker(
+                [43.735182, -79.3440358],
+                {}
+            ).addTo(feature_group_b10ae9b4be553d68996f57705a29c088);
+        
+    
+            var icon_182555f3b2293be405c7410e369195a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "green", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_155f1688065c54f0970ebbca70b40a8b.setIcon(icon_182555f3b2293be405c7410e369195a5);
+        
+    
+        var popup_3fdbc056445b68504ed26ff2e30dd5d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2442608f66e8bbaa6e586a33a6fc6bea = $(`<div id="html_2442608f66e8bbaa6e586a33a6fc6bea" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Chipotle+Mexican+Grill/data=!4m7!3m6!1s0x89d4cd722dc14823:0x363d5fa45c4a0a93!8m2!3d43.735182!4d-79.3440358!16s%2Fg%2F1pp2vhqjm!19sChIJI0jBLXLN1IkRkwpKXKRfPTY?authuser=0&hl=en&rclk=1>Chipotle Mexican Grill (4.1)</a></div>`)[0];
+                popup_3fdbc056445b68504ed26ff2e30dd5d2.setContent(html_2442608f66e8bbaa6e586a33a6fc6bea);
+            
+        
+
+        marker_155f1688065c54f0970ebbca70b40a8b.bindPopup(popup_3fdbc056445b68504ed26ff2e30dd5d2)
+        ;
+
+        
+    
+    
+            marker_155f1688065c54f0970ebbca70b40a8b.bindTooltip(
+                `<div>
+                     1072 Don Mills Rd.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f8a936f2c92dd36417b3aa2734ab7c9 = L.marker(
+                [43.7082826, -79.3982462],
+                {}
+            ).addTo(feature_group_b10ae9b4be553d68996f57705a29c088);
+        
+    
+            var icon_1ebe8a12680b3783d618f8090f48ec81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "green", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2f8a936f2c92dd36417b3aa2734ab7c9.setIcon(icon_1ebe8a12680b3783d618f8090f48ec81);
+        
+    
+        var popup_d18e83f50da90f512196fe915c498df9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_853eb88d86aac0756e23e4518ab8a2d0 = $(`<div id="html_853eb88d86aac0756e23e4518ab8a2d0" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Chipotle+Mexican+Grill/data=!4m7!3m6!1s0x882b3323485bef9d:0xb22ce0db69837d63!8m2!3d43.7082826!4d-79.3982462!16s%2Fg%2F1tj5rc9g!19sChIJne9bSCMzK4gRY32DadvgLLI?authuser=0&hl=en&rclk=1>Chipotle Mexican Grill (4.2)</a></div>`)[0];
+                popup_d18e83f50da90f512196fe915c498df9.setContent(html_853eb88d86aac0756e23e4518ab8a2d0);
+            
+        
+
+        marker_2f8a936f2c92dd36417b3aa2734ab7c9.bindPopup(popup_d18e83f50da90f512196fe915c498df9)
+        ;
+
+        
+    
+    
+            marker_2f8a936f2c92dd36417b3aa2734ab7c9.bindTooltip(
+                `<div>
+                     2323 Yonge St Unit 100
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_acc542f3699083c6c283d173cb072531 = L.marker(
+                [43.6724141, -79.4692064],
+                {}
+            ).addTo(feature_group_b10ae9b4be553d68996f57705a29c088);
+        
+    
+            var icon_dd8273eb3bb76f0b5f2cf24357729e9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "green", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_acc542f3699083c6c283d173cb072531.setIcon(icon_dd8273eb3bb76f0b5f2cf24357729e9b);
+        
+    
+        var popup_eee059e860b9eca4639b6bae612219c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_359d4afd2a14c13cd716f0a045ece5dc = $(`<div id="html_359d4afd2a14c13cd716f0a045ece5dc" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Chipotle+Mexican+Grill/data=!4m7!3m6!1s0x882b341dc8501dfd:0x4002d187ef1daccb!8m2!3d43.6724141!4d-79.4692064!16s%2Fg%2F11b76q2fbc!19sChIJ_R1QyB00K4gRy6wd74fRAkA?authuser=0&hl=en&rclk=1>Chipotle Mexican Grill (4.1)</a></div>`)[0];
+                popup_eee059e860b9eca4639b6bae612219c6.setContent(html_359d4afd2a14c13cd716f0a045ece5dc);
+            
+        
+
+        marker_acc542f3699083c6c283d173cb072531.bindPopup(popup_eee059e860b9eca4639b6bae612219c6)
+        ;
+
+        
+    
+    
+            marker_acc542f3699083c6c283d173cb072531.bindTooltip(
+                `<div>
+                     1970 St Clair Ave W Unit 109
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_61d816aba6a458a370733c3c7e03d844 = L.marker(
+                [43.6705114, -79.383897],
+                {}
+            ).addTo(feature_group_b10ae9b4be553d68996f57705a29c088);
+        
+    
+            var icon_a1090adf09ccd4b3558e92cc0d03e386 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "green", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_61d816aba6a458a370733c3c7e03d844.setIcon(icon_a1090adf09ccd4b3558e92cc0d03e386);
+        
+    
+        var popup_0c61a60f9f20a20c1481b35e5de1e5b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_022cfe5e0d50553f14326be11ac50dc6 = $(`<div id="html_022cfe5e0d50553f14326be11ac50dc6" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Chipotle+Mexican+Grill/data=!4m7!3m6!1s0x882b356d9d3157fd:0xa74780713e121549!8m2!3d43.6705114!4d-79.383897!16s%2Fg%2F11thcz8ls7!19sChIJ_VcxnW01K4gRSRUSPnGAR6c?authuser=0&hl=en&rclk=1>Chipotle Mexican Grill (3.2)</a></div>`)[0];
+                popup_0c61a60f9f20a20c1481b35e5de1e5b1.setContent(html_022cfe5e0d50553f14326be11ac50dc6);
+            
+        
+
+        marker_61d816aba6a458a370733c3c7e03d844.bindPopup(popup_0c61a60f9f20a20c1481b35e5de1e5b1)
+        ;
+
+        
+    
+    
+            marker_61d816aba6a458a370733c3c7e03d844.bindTooltip(
+                `<div>
+                     121 Bloor St E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e278d4c9a27b1c4d4107753ad91d3e91 = L.marker(
+                [43.6561185, -79.3883685],
+                {}
+            ).addTo(feature_group_b10ae9b4be553d68996f57705a29c088);
+        
+    
+            var icon_726409e0e4839694cd3b9b082599833a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "green", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e278d4c9a27b1c4d4107753ad91d3e91.setIcon(icon_726409e0e4839694cd3b9b082599833a);
+        
+    
+        var popup_4b368a52537fe7ca35904e31dd5643da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b04e280a7c4d6d772d7d58757df9566c = $(`<div id="html_b04e280a7c4d6d772d7d58757df9566c" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Chipotle+Mexican+Grill/data=!4m7!3m6!1s0x882b35e216a3c7db:0x3092d5ae2e41fb72!8m2!3d43.6561185!4d-79.3883685!16s%2Fg%2F11snyy0g4b!19sChIJ28ejFuI1K4gRcvtBLq7VkjA?authuser=0&hl=en&rclk=1>Chipotle Mexican Grill (3.4)</a></div>`)[0];
+                popup_4b368a52537fe7ca35904e31dd5643da.setContent(html_b04e280a7c4d6d772d7d58757df9566c);
+            
+        
+
+        marker_e278d4c9a27b1c4d4107753ad91d3e91.bindPopup(popup_4b368a52537fe7ca35904e31dd5643da)
+        ;
+
+        
+    
+    
+            marker_e278d4c9a27b1c4d4107753ad91d3e91.bindTooltip(
+                `<div>
+                     525 University Ave
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4bd28936eb93c0375e8b2c4da32da23d = L.marker(
+                [43.6133128, -79.558385],
+                {}
+            ).addTo(feature_group_b10ae9b4be553d68996f57705a29c088);
+        
+    
+            var icon_ee54a031ee4c1f35d9cf723a0f30498a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "green", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4bd28936eb93c0375e8b2c4da32da23d.setIcon(icon_ee54a031ee4c1f35d9cf723a0f30498a);
+        
+    
+        var popup_0b3bb3e81dfdccb8678aad1011bfd96d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee3d2aec407c3aeab9b9fff20eaa553f = $(`<div id="html_ee3d2aec407c3aeab9b9fff20eaa553f" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Chipotle+Mexican+Grill/data=!4m7!3m6!1s0x882b4806fa9867c9:0xe7723e5faa760d7d!8m2!3d43.6133128!4d-79.558385!16s%2Fg%2F11bw5ynx0y!19sChIJyWeY-gZIK4gRfQ12ql8-cuc?authuser=0&hl=en&rclk=1>Chipotle Mexican Grill (3.8)</a></div>`)[0];
+                popup_0b3bb3e81dfdccb8678aad1011bfd96d.setContent(html_ee3d2aec407c3aeab9b9fff20eaa553f);
+            
+        
+
+        marker_4bd28936eb93c0375e8b2c4da32da23d.bindPopup(popup_0b3bb3e81dfdccb8678aad1011bfd96d)
+        ;
+
+        
+    
+    
+            marker_4bd28936eb93c0375e8b2c4da32da23d.bindTooltip(
+                `<div>
+                     25 The West Mall Unit F012
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c6852ad079f1fcb32efae5796ea47f22 = L.marker(
+                [43.7659341, -79.4123582],
+                {}
+            ).addTo(feature_group_b10ae9b4be553d68996f57705a29c088);
+        
+    
+            var icon_bfab012b53575a65a811f552b9ffb34b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "green", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c6852ad079f1fcb32efae5796ea47f22.setIcon(icon_bfab012b53575a65a811f552b9ffb34b);
+        
+    
+        var popup_44b8c204e084fc06412170a98cddcce1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78f405c1e78859ca955fa32fef4826d4 = $(`<div id="html_78f405c1e78859ca955fa32fef4826d4" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Chipotle+Mexican+Grill/data=!4m7!3m6!1s0x882b2df539093451:0x372ef5e520199ed9!8m2!3d43.7659341!4d-79.4123582!16s%2Fg%2F11p5ck1ytb!19sChIJUTQJOfUtK4gR2Z4ZIOX1Ljc?authuser=0&hl=en&rclk=1>Chipotle Mexican Grill (3.4)</a></div>`)[0];
+                popup_44b8c204e084fc06412170a98cddcce1.setContent(html_78f405c1e78859ca955fa32fef4826d4);
+            
+        
+
+        marker_c6852ad079f1fcb32efae5796ea47f22.bindPopup(popup_44b8c204e084fc06412170a98cddcce1)
+        ;
+
+        
+    
+    
+            marker_c6852ad079f1fcb32efae5796ea47f22.bindTooltip(
+                `<div>
+                     4996 Yonge St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b155aaef69acdb205dca111f8a540f6a = L.marker(
+                [43.7258372, -79.4512923],
+                {}
+            ).addTo(feature_group_b10ae9b4be553d68996f57705a29c088);
+        
+    
+            var icon_6d2ec8d9ea2929b57e9413a98f37166f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "green", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b155aaef69acdb205dca111f8a540f6a.setIcon(icon_6d2ec8d9ea2929b57e9413a98f37166f);
+        
+    
+        var popup_923b493bf1f520cbedad1060eedb6c90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_88543b759a5c60ac51cfbfc0a5617c7d = $(`<div id="html_88543b759a5c60ac51cfbfc0a5617c7d" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Chipotle+Mexican+Grill/data=!4m7!3m6!1s0x882b3233b84a244d:0x7abe20365144a0fa!8m2!3d43.7258372!4d-79.4512923!16s%2Fg%2F11h168_2k!19sChIJTSRKuDMyK4gR-qBEUTYgvno?authuser=0&hl=en&rclk=1>Chipotle Mexican Grill (3.7)</a></div>`)[0];
+                popup_923b493bf1f520cbedad1060eedb6c90.setContent(html_88543b759a5c60ac51cfbfc0a5617c7d);
+            
+        
+
+        marker_b155aaef69acdb205dca111f8a540f6a.bindPopup(popup_923b493bf1f520cbedad1060eedb6c90)
+        ;
+
+        
+    
+    
+            marker_b155aaef69acdb205dca111f8a540f6a.bindTooltip(
+                `<div>
+                     3401 Dufferin St Unit FC-04
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_daa2daf0ea18ca1ccb46769d67b4f69d = L.marker(
+                [43.6397883, -79.4206851],
+                {}
+            ).addTo(feature_group_b10ae9b4be553d68996f57705a29c088);
+        
+    
+            var icon_5c8086383c2fd27075d980eaefb51024 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "green", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_daa2daf0ea18ca1ccb46769d67b4f69d.setIcon(icon_5c8086383c2fd27075d980eaefb51024);
+        
+    
+        var popup_55580320653ac67c1228296db7c562d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4231a6116ecb179417f565442fe24c49 = $(`<div id="html_4231a6116ecb179417f565442fe24c49" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Chipotle+Mexican+Grill/data=!4m7!3m6!1s0x882b358094f072f5:0xe86ec12c81deded8!8m2!3d43.6397883!4d-79.4206851!16s%2Fg%2F11t1c58yt_!19sChIJ9XLwlIA1K4gR2N7egSzBbug?authuser=0&hl=en&rclk=1>Chipotle Mexican Grill (2.6)</a></div>`)[0];
+                popup_55580320653ac67c1228296db7c562d3.setContent(html_4231a6116ecb179417f565442fe24c49);
+            
+        
+
+        marker_daa2daf0ea18ca1ccb46769d67b4f69d.bindPopup(popup_55580320653ac67c1228296db7c562d3)
+        ;
+
+        
+    
+    
+            marker_daa2daf0ea18ca1ccb46769d67b4f69d.bindTooltip(
+                `<div>
+                     109 Atlantic Ave
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25e9fe45c102e03c7cc4015228577f3f = L.marker(
+                [43.64945, -79.37832],
+                {}
+            ).addTo(feature_group_b10ae9b4be553d68996f57705a29c088);
+        
+    
+            var icon_cb9e98083685ffe857fb3fd20b5b8f32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "green", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_25e9fe45c102e03c7cc4015228577f3f.setIcon(icon_cb9e98083685ffe857fb3fd20b5b8f32);
+        
+    
+        var popup_587641b552bbc259e02d380e1ba96c69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c19695279b94a850ee9f7fb91de4a877 = $(`<div id="html_c19695279b94a850ee9f7fb91de4a877" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Chipotle+Mexican+restaurant/data=!4m7!3m6!1s0x89d4cb6dadb5eb79:0xf21eaf452359fe06!8m2!3d43.64945!4d-79.37832!16s%2Fg%2F11q9m24v1w!19sChIJeeu1rW3L1IkRBv5ZI0WvHvI?authuser=0&hl=en&rclk=1>Chipotle Mexican restaurant (3.0)</a></div>`)[0];
+                popup_587641b552bbc259e02d380e1ba96c69.setContent(html_c19695279b94a850ee9f7fb91de4a877);
+            
+        
+
+        marker_25e9fe45c102e03c7cc4015228577f3f.bindPopup(popup_587641b552bbc259e02d380e1ba96c69)
+        ;
+
+        
+    
+    
+            marker_25e9fe45c102e03c7cc4015228577f3f.bindTooltip(
+                `<div>
+                     4 King St W
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e2b0f28eb1828f63ef02ef41878a4231 = L.marker(
+                [43.775088, -79.2574248],
+                {}
+            ).addTo(feature_group_b10ae9b4be553d68996f57705a29c088);
+        
+    
+            var icon_e5b313fdc62e8856fc976bc62861914d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "green", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e2b0f28eb1828f63ef02ef41878a4231.setIcon(icon_e5b313fdc62e8856fc976bc62861914d);
+        
+    
+        var popup_d4691fd9ed4f6ff04c21fa3ae7cd6d5c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef487ceae737fb664d5e7f44342c2656 = $(`<div id="html_ef487ceae737fb664d5e7f44342c2656" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Chipotle+Mexican+Grill/data=!4m7!3m6!1s0x89d4d1a66e85e90d:0x6f94fa4518461790!8m2!3d43.775088!4d-79.2574248!16s%2Fg%2F11c504crr6!19sChIJDemFbqbR1IkRkBdGGEX6lG8?authuser=0&hl=en&rclk=1>Chipotle Mexican Grill (4.0)</a></div>`)[0];
+                popup_d4691fd9ed4f6ff04c21fa3ae7cd6d5c.setContent(html_ef487ceae737fb664d5e7f44342c2656);
+            
+        
+
+        marker_e2b0f28eb1828f63ef02ef41878a4231.bindPopup(popup_d4691fd9ed4f6ff04c21fa3ae7cd6d5c)
+        ;
+
+        
+    
+    
+            marker_e2b0f28eb1828f63ef02ef41878a4231.bindTooltip(
+                `<div>
+                     Drive Food, 300 Borough Dr
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_27bf62105993ecab68352dda4615e84b = L.marker(
+                [43.8525603, -79.3590983],
+                {}
+            ).addTo(feature_group_b10ae9b4be553d68996f57705a29c088);
+        
+    
+            var icon_9923e3fbfb50d6198155197ed0c2d9fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "green", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_27bf62105993ecab68352dda4615e84b.setIcon(icon_9923e3fbfb50d6198155197ed0c2d9fa);
+        
+    
+        var popup_509ba96d1ab281db2c7005dbdec58949 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d6bc0c86aff689b03c74e24a2d2c739 = $(`<div id="html_1d6bc0c86aff689b03c74e24a2d2c739" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Chipotle+Mexican+Grill/data=!4m7!3m6!1s0x89d4d5835bfd5963:0x3447eeec66cf1a61!8m2!3d43.8525603!4d-79.3590983!16s%2Fg%2F11gv_j2gmc!19sChIJY1n9W4PV1IkRYRrPZuzuRzQ?authuser=0&hl=en&rclk=1>Chipotle Mexican Grill (4.0)</a></div>`)[0];
+                popup_509ba96d1ab281db2c7005dbdec58949.setContent(html_1d6bc0c86aff689b03c74e24a2d2c739);
+            
+        
+
+        marker_27bf62105993ecab68352dda4615e84b.bindPopup(popup_509ba96d1ab281db2c7005dbdec58949)
+        ;
+
+        
+    
+    
+            marker_27bf62105993ecab68352dda4615e84b.bindTooltip(
+                `<div>
+                     8610 Woodbine Ave Unit B5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ee706ce20de3283116e7ac529f635ce = L.marker(
+                [43.6374021, -79.6223602],
+                {}
+            ).addTo(feature_group_b10ae9b4be553d68996f57705a29c088);
+        
+    
+            var icon_6e9ea07ddbd1d535aa3e38af85a70f67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "green", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7ee706ce20de3283116e7ac529f635ce.setIcon(icon_6e9ea07ddbd1d535aa3e38af85a70f67);
+        
+    
+        var popup_18260317538023f52b71c62dfb82c8a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9776bff1decd3d492837250c59280d5 = $(`<div id="html_b9776bff1decd3d492837250c59280d5" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Chipotle+Mexican+Grill/data=!4m7!3m6!1s0x882b3896a2fe7b59:0x7d3eede8d0799df4!8m2!3d43.6374021!4d-79.6223602!16s%2Fg%2F11cmsct4s0!19sChIJWXv-opY4K4gR9J150OjtPn0?authuser=0&hl=en&rclk=1>Chipotle Mexican Grill (4.2)</a></div>`)[0];
+                popup_18260317538023f52b71c62dfb82c8a6.setContent(html_b9776bff1decd3d492837250c59280d5);
+            
+        
+
+        marker_7ee706ce20de3283116e7ac529f635ce.bindPopup(popup_18260317538023f52b71c62dfb82c8a6)
+        ;
+
+        
+    
+    
+            marker_7ee706ce20de3283116e7ac529f635ce.bindTooltip(
+                `<div>
+                     5089 Dixie Rd Building B, Unit B1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_36d2e4d5483019d59d2264e9fec16cad = L.marker(
+                [43.8256335, -79.5388757],
+                {}
+            ).addTo(feature_group_b10ae9b4be553d68996f57705a29c088);
+        
+    
+            var icon_ee0710ec5ee98f5e4982b58b0ec2e623 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "green", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_36d2e4d5483019d59d2264e9fec16cad.setIcon(icon_ee0710ec5ee98f5e4982b58b0ec2e623);
+        
+    
+        var popup_e6ee2313452e3f9ebc466e2c6fd0d8db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_047c0aebf7ba34df3bb53b76df60e771 = $(`<div id="html_047c0aebf7ba34df3bb53b76df60e771" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Chipotle+Mexican+Grill/data=!4m7!3m6!1s0x882b2f400ececcfd:0xcff8f30616d3c41b!8m2!3d43.8256335!4d-79.5388757!16s%2Fg%2F11b8v6fxdy!19sChIJ_czODkAvK4gRG8TTFgbz-M8?authuser=0&hl=en&rclk=1>Chipotle Mexican Grill (3.2)</a></div>`)[0];
+                popup_e6ee2313452e3f9ebc466e2c6fd0d8db.setContent(html_047c0aebf7ba34df3bb53b76df60e771);
+            
+        
+
+        marker_36d2e4d5483019d59d2264e9fec16cad.bindPopup(popup_e6ee2313452e3f9ebc466e2c6fd0d8db)
+        ;
+
+        
+    
+    
+            marker_36d2e4d5483019d59d2264e9fec16cad.bindTooltip(
+                `<div>
+                     1 Bass Pro Mills Dr Suite Fc6a
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_69aabba6e473fde3833516b4ce8a4fc4 = L.marker(
+                [43.5934912, -79.6424363],
+                {}
+            ).addTo(feature_group_b10ae9b4be553d68996f57705a29c088);
+        
+    
+            var icon_685ceb51c4a59a9e6190cf82540e2dbb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "green", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_69aabba6e473fde3833516b4ce8a4fc4.setIcon(icon_685ceb51c4a59a9e6190cf82540e2dbb);
+        
+    
+        var popup_d9fbaf3c0a2fd80ea9a9ae99576c3c75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e0547cb3c8ed3c905541fc6512c6cd0 = $(`<div id="html_6e0547cb3c8ed3c905541fc6512c6cd0" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Chipotle+Mexican+Grill/data=!4m7!3m6!1s0x882b472ece3bcf6d:0x6c5eb7170d43f567!8m2!3d43.5934912!4d-79.6424363!16s%2Fg%2F1jkykys6v!19sChIJbc87zi5HK4gRZ_VDDRe3Xmw?authuser=0&hl=en&rclk=1>Chipotle Mexican Grill (4.0)</a></div>`)[0];
+                popup_d9fbaf3c0a2fd80ea9a9ae99576c3c75.setContent(html_6e0547cb3c8ed3c905541fc6512c6cd0);
+            
+        
+
+        marker_69aabba6e473fde3833516b4ce8a4fc4.bindPopup(popup_d9fbaf3c0a2fd80ea9a9ae99576c3c75)
+        ;
+
+        
+    
+    
+            marker_69aabba6e473fde3833516b4ce8a4fc4.bindTooltip(
+                `<div>
+                     100 City Centre Dr Suite 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89c793a4e7992b561eac7b66f08b78d6 = L.marker(
+                [43.8504032, -79.5328214],
+                {}
+            ).addTo(feature_group_b10ae9b4be553d68996f57705a29c088);
+        
+    
+            var icon_a8c8af6c3148c1ef9f154a506c571415 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "green", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_89c793a4e7992b561eac7b66f08b78d6.setIcon(icon_a8c8af6c3148c1ef9f154a506c571415);
+        
+    
+        var popup_30650dfb3a3aaa0e52f7e1e6e0dadcc0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19b12294dbd89312b97ab5a1024830a0 = $(`<div id="html_19b12294dbd89312b97ab5a1024830a0" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Chipotle+Mexican+Grill/data=!4m7!3m6!1s0x882b28c8d587c73b:0x245a5990dc2c88a7!8m2!3d43.8504032!4d-79.5328214!16s%2Fg%2F11dym88q_9!19sChIJO8eH1cgoK4gRp4gs3JBZWiQ?authuser=0&hl=en&rclk=1>Chipotle Mexican Grill (4.0)</a></div>`)[0];
+                popup_30650dfb3a3aaa0e52f7e1e6e0dadcc0.setContent(html_19b12294dbd89312b97ab5a1024830a0);
+            
+        
+
+        marker_89c793a4e7992b561eac7b66f08b78d6.bindPopup(popup_30650dfb3a3aaa0e52f7e1e6e0dadcc0)
+        ;
+
+        
+    
+    
+            marker_89c793a4e7992b561eac7b66f08b78d6.bindTooltip(
+                `<div>
+                     2901 Major MacKenzie Dr W C
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b70a4b3853fc07b6f14fcfb1a542f3b7 = L.marker(
+                [43.5167882, -79.6871317],
+                {}
+            ).addTo(feature_group_b10ae9b4be553d68996f57705a29c088);
+        
+    
+            var icon_bf8926b4830e241790bff966ca049563 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "green", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b70a4b3853fc07b6f14fcfb1a542f3b7.setIcon(icon_bf8926b4830e241790bff966ca049563);
+        
+    
+        var popup_f63ac8791a26ef3e0bb5c76742487efb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66ac5bab7e4078ab22681f3445e0916f = $(`<div id="html_66ac5bab7e4078ab22681f3445e0916f" style="width: 100.0%; height: 100.0%;"><a href=https://www.google.com/maps/place/Chipotle+Mexican+Grill/data=!4m7!3m6!1s0x882b43a9c98dcc7d:0x33f4749f278c9689!8m2!3d43.5167882!4d-79.6871317!16s%2Fg%2F11g6hswcxj!19sChIJfcyNyalDK4gRiZaMJ5909DM?authuser=0&hl=en&rclk=1>Chipotle Mexican Grill (3.9)</a></div>`)[0];
+                popup_f63ac8791a26ef3e0bb5c76742487efb.setContent(html_66ac5bab7e4078ab22681f3445e0916f);
+            
+        
+
+        marker_b70a4b3853fc07b6f14fcfb1a542f3b7.bindPopup(popup_f63ac8791a26ef3e0bb5c76742487efb)
+        ;
+
+        
+    
+    
+            marker_b70a4b3853fc07b6f14fcfb1a542f3b7.bindTooltip(
+                `<div>
+                     2530 Winston Park Dr Unit B1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_3c450af99f65e748b8b219fce2066956 = {
+                base_layers : {
+                    "http://mt0.google.com/vt/lyrs=m\u0026hl=ko\u0026x={x}\u0026y={y}\u0026z={z}" : tile_layer_1eec6755b5e76a05a379553cebd2cd74,
+                },
+                overlays :  {
+                    "pizza (red)" : feature_group_9cbf59877f99171c8c5f065f7da90c19,
+                    "chipotle (green)" : feature_group_b10ae9b4be553d68996f57705a29c088,
+                },
+            };
+            L.control.layers(
+                layer_control_3c450af99f65e748b8b219fce2066956.base_layers,
+                layer_control_3c450af99f65e748b8b219fce2066956.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_c05ea6184810cc9f8373fa76e7bf3171);
+        
+</script>
+</html>

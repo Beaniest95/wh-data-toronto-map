@@ -4,4 +4,3 @@ secret
 tests
 *.code-workspace
 *.json
-*.html
