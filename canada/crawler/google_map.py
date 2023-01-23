@@ -55,9 +55,9 @@ class GoogleMapCrawler(WebCrawler):
         searchbutton = self.driver.find_element(By.CSS_SELECTOR, searchbutton_selector)
         time.sleep(1)
         searchbutton.click()
-        time.sleep(10)
+        time.sleep(60)
 
-        self.scroll_down()
+        # self.scroll_down()
 
     def scroll_down(self):
         scroll_count = 0
@@ -98,7 +98,7 @@ class GoogleMapCrawler(WebCrawler):
 
 
     def crawl(self):
-        for i in range(3, 999):
+        for i in range(3, 999, 2):
             index = str(i)
             line_type = self._get_line_type(server_variables.google.valid_result_xpath.format(index=index))
             url, name, grade, address = None, None, None, None

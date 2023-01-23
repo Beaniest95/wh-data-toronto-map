@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from typing import Any, Dict, Iterable, List, Optional, Tuple
-from secret import GOOGLE_MAP_API_KEY
+from variables.secret import GOOGLE_MAP_API_KEY
 
 @dataclass
 class GoogleMapVariables:
@@ -33,7 +33,7 @@ class GoogleMapVariables:
     #####################
     #  Drawer Variable  #
     #####################
-    marker_style: Dict[str, Tuple[str,str]]
+    map_category: Dict[str, Dict[str, str]]
     polyline: List[List[float]]
     toronto_center_coordinates: List[float]
     map_zoom_size: int
@@ -75,27 +75,25 @@ class GoogleMapVariables:
                 'm6QErb tLjsW',
             ],
             search_string=[
-                'canada toronto bank',
-                'canada toronto hospital',
+                # 'canada toronto bank',
+                # 'canada toronto hospital',
 
-                'canada toronto church',
+                # 'canada toronto church',
 
-                'canada toronto coin laundry',
-                'canada toronto fitness center',
-                'canada toronto theatre',
+                # 'canada toronto coin laundry',
+                # 'canada toronto fitness center',
+                # 'canada toronto theatre',
+                'canada toronto park',
 
-                'canada toronto costco',
-                'canada toronto walmart',
-                'canada toronto freshco',
-                'canada toronto best buy',
-                'canada toronto grocery',
-                'canada toronto shopping mall',
+                # 'canada toronto costco',
+                # 'canada toronto walmart',
+                # 'canada toronto freshco',
+                # 'canada toronto best buy',
+                # 'canada toronto grocery',
+                # 'canada toronto shopping mall',
 
-                'canada toronto restaurant',
-                'canada toronto pizza',
+                # 'canada toronto pizza',
                 'canada toronto chipotle',
-                'canada toronto bbq chicken',
-                'canada toronto food',
             ],
 
             #####################
@@ -110,28 +108,30 @@ class GoogleMapVariables:
             #####################
             #  Drawer Variable  #
             #####################
-            marker_style={
-                'bank': ('blue','bank'),
-                'hospital': ('blue','hospital'),
-
-                'church': ('purple', 'church'),
-
-                'coin_laundry': ('green', 'droplet'),
-                'fitness_center': ('green', 'heart-pulse'),
-                'theatre': ('green', 'film'),
-
-                'costco': ('cyan', 'location-dot'),
-                'freshco': ('blue','location-dot'),
-                'walmart': ('black', 'location-dot'),
-                'best_buy': ('black', 'tv'),
-                'grocery': ('green', 'location-dot'),
-                'shopping_mall': ('red', 'location-dot'),
-
-                'restaurant': ('red', 'star'),
-                'pizza': ('purple', 'star'),
-                'chipotle': ('cyan', 'star'),
-                'bbq_chicken': ('brown', 'star'),
-                'food': ('green', 'star'),
+            map_category={
+                'infra': {
+                    'bank': 'blue',
+                    'hospital': 'red',
+                    'church': 'green',
+                },
+                'living': {
+                    'coin_laundry': 'blue',
+                    'fitness_center': 'red',
+                    'theatre': 'green',
+                    'park': 'gray',
+                },
+                'shopping': {
+                    'costco': 'blue',
+                    'freshco': 'red',
+                    'walmart': 'green',
+                    'best_buy': 'black',
+                    'grocery': 'gray',
+                    'shopping_mall': 'orange',
+                },
+                'food': {
+                    'pizza': 'red',
+                    'chipotle': 'green',
+                }
             },
             polyline=[
                 [43.749391, -79.638496],
